@@ -1,0 +1,1611 @@
+﻿  Board.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Board.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Board.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Board.cpp')
+  
+Z:\Lawn\Board.cpp(670,21): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(862,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(1007,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(1071,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(1155,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(1573,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1581,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(1581,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(1581,108): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(1581,98): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(1581,97): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1581,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1633,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1634,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1636,77): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1636,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(1810,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(1810,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(1815,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(2120,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(2120,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(2125,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(2125,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(2278,23): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(3665,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(3665,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(3665,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(3665,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(3968,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(4083,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4083,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4147,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4148,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4148,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4148,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4148,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4156,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4156,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4156,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4156,19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(4297,56): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Board.cpp(4297,56): warning C4244:         with
+Z:\Lawn\Board.cpp(4297,56): warning C4244:         [
+Z:\Lawn\Board.cpp(4297,56): warning C4244:             _T=int
+Z:\Lawn\Board.cpp(4297,56): warning C4244:         ]
+Z:\Lawn\Board.cpp(4297,36): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Board.cpp(4297,36): warning C4244:         with
+Z:\Lawn\Board.cpp(4297,36): warning C4244:         [
+Z:\Lawn\Board.cpp(4297,36): warning C4244:             _T=int
+Z:\Lawn\Board.cpp(4297,36): warning C4244:         ]
+Z:\Lawn\Board.cpp(4468,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(5013,96): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(5498,58): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(5531,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(5532,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(5678,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(5679,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(5680,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(5680,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(5788,68): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(5788,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(6010,21): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(6359,97): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(6622,4): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(6868,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(6868,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(6872,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(6872,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(6876,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(6876,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(7214,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(7438,18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7538,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(7540,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(7542,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(7543,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(7545,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(7547,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7548,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7560,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7560,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7564,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7564,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Board.cpp(7658,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(8923,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(9107,21): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Board.cpp(9763,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(9852,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Board.cpp(9916,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  Challenge.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Challenge.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Challenge.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Challenge.cpp')
+  
+Z:\Lawn\Challenge.cpp(321,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(321,68): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(840,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(841,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(898,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(898,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(989,12): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Challenge.cpp(1219,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(1219,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(1646,50): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(1852,7): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Challenge.cpp(2255,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2256,14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2264,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(2264,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(2321,122): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2321,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2356,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2357,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2360,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2382,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2383,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2442,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2442,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(2878,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3086,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3087,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3198,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3201,45): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(3202,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3221,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3225,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3239,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(3243,52): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3245,69): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3747,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3748,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3749,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(3749,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(3761,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3762,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(3763,36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(3763,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(4094,4): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Challenge.cpp(4156,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4156,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4234,85): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4246,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Challenge.cpp(4274,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4274,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4369,16): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Challenge.cpp(4381,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4542,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4543,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(4750,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Challenge.cpp(4926,63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(4926,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Challenge.cpp(5045,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(5046,15): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Challenge.cpp(5066,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Coin.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Coin.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Coin.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Coin.cpp')
+  
+Z:\Lawn\Coin.cpp(30,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(31,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(308,31): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(315,31): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(327,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(367,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(371,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Coin.cpp(497,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(510,36): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(511,36): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(561,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(562,32): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(651,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(652,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(675,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(766,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(796,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(796,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(802,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(802,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(808,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(808,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(814,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(814,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Coin.cpp(982,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(982,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(989,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Coin.cpp(1004,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(1008,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(1009,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(1225,36): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Coin.cpp(1226,36): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  CursorObject.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/CursorObject.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/CursorObject.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/CursorObject.cpp')
+  
+  CutScene.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/CutScene.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/CutScene.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/CutScene.cpp')
+  
+Z:\Lawn\CutScene.cpp(122,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\CutScene.cpp(123,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\CutScene.cpp(479,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\CutScene.cpp(903,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\CutScene.cpp(1275,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\CutScene.cpp(1831,19): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\CutScene.cpp(2351,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\CutScene.cpp(2353,98): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\CutScene.cpp(2353,98): warning C4244:         with
+Z:\Lawn\CutScene.cpp(2353,98): warning C4244:         [
+Z:\Lawn\CutScene.cpp(2353,98): warning C4244:             _T=int
+Z:\Lawn\CutScene.cpp(2353,98): warning C4244:         ]
+Z:\Lawn\CutScene.cpp(2353,84): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\CutScene.cpp(2353,84): warning C4244:         with
+Z:\Lawn\CutScene.cpp(2353,84): warning C4244:         [
+Z:\Lawn\CutScene.cpp(2353,84): warning C4244:             _T=int
+Z:\Lawn\CutScene.cpp(2353,84): warning C4244:         ]
+Z:\Lawn\CutScene.cpp(2353,57): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\CutScene.cpp(2353,57): warning C4244:         with
+Z:\Lawn\CutScene.cpp(2353,57): warning C4244:         [
+Z:\Lawn\CutScene.cpp(2353,57): warning C4244:             _T=int
+Z:\Lawn\CutScene.cpp(2353,57): warning C4244:         ]
+Z:\Lawn\CutScene.cpp(2353,23): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\CutScene.cpp(2353,23): warning C4244:         with
+Z:\Lawn\CutScene.cpp(2353,23): warning C4244:         [
+Z:\Lawn\CutScene.cpp(2353,23): warning C4244:             _T=int
+Z:\Lawn\CutScene.cpp(2353,23): warning C4244:         ]
+  LawnMower.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/LawnMower.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/LawnMower.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/LawnMower.cpp')
+  
+Z:\Lawn\LawnMower.cpp(321,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\LawnMower.cpp(405,24): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\LawnMower.cpp(405,24): warning C4244:         with
+Z:\Lawn\LawnMower.cpp(405,24): warning C4244:         [
+Z:\Lawn\LawnMower.cpp(405,24): warning C4244:             _T=int
+Z:\Lawn\LawnMower.cpp(405,24): warning C4244:         ]
+Z:\Lawn\LawnMower.cpp(405,17): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\LawnMower.cpp(405,17): warning C4244:         with
+Z:\Lawn\LawnMower.cpp(405,17): warning C4244:         [
+Z:\Lawn\LawnMower.cpp(405,17): warning C4244:             _T=int
+Z:\Lawn\LawnMower.cpp(405,17): warning C4244:         ]
+  Projectile.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Projectile.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Projectile.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Projectile.cpp')
+  
+Z:\Lawn\Projectile.cpp(45,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Projectile.cpp(46,10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Projectile.cpp(80,23): warning C4305: '=': truncation from 'double' to 'float'
+Z:\Lawn\Projectile.cpp(85,23): warning C4305: '=': truncation from 'double' to 'float'
+Z:\Lawn\Projectile.cpp(100,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Projectile.cpp(106,18): warning C4305: '=': truncation from 'double' to 'float'
+Z:\Lawn\Projectile.cpp(115,38): warning C4305: 'argument': truncation from 'double' to 'float'
+Z:\Lawn\Projectile.cpp(361,60): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(361,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(498,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(499,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Projectile.cpp(501,19): warning C4305: '=': truncation from 'double' to 'float'
+Z:\Lawn\Projectile.cpp(607,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(607,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(629,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Projectile.cpp(640,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Projectile.cpp(646,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(646,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(656,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(656,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(674,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Projectile.cpp(912,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(912,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Projectile.cpp(1028,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  DataSync.cpp
+  Music.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/System/Music.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/System/Music.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/System/Music.cpp')
+  
+Z:\Lawn\System\Music.cpp(265,81): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\System\Music.cpp(730,50): warning C4244: '=': conversion from 'QWORD' to 'int', possible loss of data
+  PlayerInfo.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/System/PlayerInfo.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/System/PlayerInfo.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/System/PlayerInfo.cpp')
+  
+  PoolEffect.cpp
+Z:\Lawn\System\PoolEffect.cpp(136,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(137,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(138,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(139,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(140,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(141,34): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(142,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(143,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(145,78): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(146,113): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(147,85): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(148,128): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(149,86): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(150,142): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(184,67): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(184,67): warning C4244:         with
+Z:\Lawn\System\PoolEffect.cpp(184,67): warning C4244:         [
+Z:\Lawn\System\PoolEffect.cpp(184,67): warning C4244:             _T=int
+Z:\Lawn\System\PoolEffect.cpp(184,67): warning C4244:         ]
+Z:\Lawn\System\PoolEffect.cpp(184,57): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(184,57): warning C4244:         with
+Z:\Lawn\System\PoolEffect.cpp(184,57): warning C4244:         [
+Z:\Lawn\System\PoolEffect.cpp(184,57): warning C4244:             _T=int
+Z:\Lawn\System\PoolEffect.cpp(184,57): warning C4244:         ]
+Z:\Lawn\System\PoolEffect.cpp(208,67): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(208,67): warning C4244:         with
+Z:\Lawn\System\PoolEffect.cpp(208,67): warning C4244:         [
+Z:\Lawn\System\PoolEffect.cpp(208,67): warning C4244:             _T=int
+Z:\Lawn\System\PoolEffect.cpp(208,67): warning C4244:         ]
+Z:\Lawn\System\PoolEffect.cpp(208,57): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\System\PoolEffect.cpp(208,57): warning C4244:         with
+Z:\Lawn\System\PoolEffect.cpp(208,57): warning C4244:         [
+Z:\Lawn\System\PoolEffect.cpp(208,57): warning C4244:             _T=int
+Z:\Lawn\System\PoolEffect.cpp(208,57): warning C4244:         ]
+  ProfileMgr.cpp
+Z:\Lawn\System\ProfileMgr.cpp(51,34): warning C4018: '>': signed/unsigned mismatch
+Z:\Lawn\System\ProfileMgr.cpp(53,38): warning C4018: '>': signed/unsigned mismatch
+  ReanimationLawn.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/System/ReanimationLawn.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/System/ReanimationLawn.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/System/ReanimationLawn.cpp')
+  
+Z:\Lawn\System\ReanimationLawn.cpp(206,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(206,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(212,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(212,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(218,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(218,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(222,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(222,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(227,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(227,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(231,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(231,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(232,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(232,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(236,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(236,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(237,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(237,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(238,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(238,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(391,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\System\ReanimationLawn.cpp(391,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  SaveGame.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/System/SaveGame.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/System/SaveGame.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/System/SaveGame.cpp')
+  
+  TypingCheck.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/System/TypingCheck.cpp')
+  
+Z:\Lawn\System\TypingCheck.cpp(13,20): warning C4018: '<': signed/unsigned mismatch
+Z:\Lawn\System\TypingCheck.cpp(48,27): warning C4018: '>': signed/unsigned mismatch
+  AlmanacDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/AlmanacDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/AlmanacDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/AlmanacDialog.cpp')
+  
+Z:\Lawn\Widget\AlmanacDialog.cpp(146,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\AlmanacDialog.cpp(147,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\AlmanacDialog.cpp(292,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\AlmanacDialog.cpp(292,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  AwardScreen.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/AwardScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/AwardScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/AwardScreen.cpp')
+  
+  ChallengeScreen.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/ChallengeScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/ChallengeScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/ChallengeScreen.cpp')
+  
+Z:\Lawn\Widget\ChallengeScreen.cpp(327,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Widget\ChallengeScreen.cpp(446,35): warning C4002: too many arguments for function-like macro invocation '_S'
+Z:\Lawn\Widget\ChallengeScreen.cpp(450,20): warning C4002: too many arguments for function-like macro invocation '_S'
+Z:\Lawn\Widget\ChallengeScreen.cpp(454,21): warning C4002: too many arguments for function-like macro invocation '_S'
+Z:\Lawn\Widget\ChallengeScreen.cpp(459,19): warning C4002: too many arguments for function-like macro invocation '_S'
+Z:\Lawn\Widget\ChallengeScreen.cpp(464,20): warning C4002: too many arguments for function-like macro invocation '_S'
+Z:\Lawn\Widget\ChallengeScreen.cpp(532,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\ChallengeScreen.cpp(532,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CheatDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/CheatDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/CheatDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/CheatDialog.cpp')
+  
+  ContinueDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/ContinueDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/ContinueDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/ContinueDialog.cpp')
+  
+  Generating Code...
+Z:\Lawn\Widget\ChallengeScreen.cpp(333,1): warning C4715: 'ChallengeScreen::MoreTrophiesNeeded': not all control paths return a value
+Z:\Lawn\Challenge.cpp(2934,1): warning C4715: 'Challenge::UpdateZombieSpawning': not all control paths return a value
+Z:\Lawn\Challenge.cpp(3062,1): warning C4700: uninitialized local variable 'aBoardOffsetX' used
+Z:\Lawn\Challenge.cpp(4371,1): warning C4715: 'Challenge::IZombieSeedTypeToZombieType': not all control paths return a value
+Z:\Lawn\Board.cpp(2280,1): warning C4715: 'Board::GetTopPlantAt': not all control paths return a value
+Z:\Lawn\Board.cpp(8924,1): warning C4715: 'Board::LeftFogColumn': not all control paths return a value
+Z:\Lawn\Board.cpp(9764,1): warning C4715: 'Board::GetNumWavesPerSurvivalStage': not all control paths return a value
+Z:\Lawn\Board.cpp(9853,1): warning C4715: 'Board::CanUseGameObject': not all control paths return a value
+  Compiling...
+  CreditScreen.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/CreditScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/CreditScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/CreditScreen.cpp')
+  
+Z:\Lawn\Widget\CreditScreen.cpp(591,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Widget\CreditScreen.cpp(607,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(608,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(609,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(610,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(611,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(612,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(613,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(614,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(667,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(681,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(682,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(684,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(685,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(687,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(689,31): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(690,35): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(702,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(702,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(815,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(815,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(822,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(822,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(828,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(828,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(847,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(847,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(862,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(862,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1081,33): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1082,34): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1407,93): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1408,85): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1474,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1475,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1480,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1484,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1488,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1492,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1496,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1500,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1507,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1512,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1517,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1522,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1527,48): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1535,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1540,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1545,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1550,48): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\Widget\CreditScreen.cpp(1662,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  GameSelector.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/GameSelector.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/GameSelector.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/GameSelector.cpp')
+  
+Z:\Lawn\Widget\GameSelector.cpp(500,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\GameSelector.cpp(501,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\GameSelector.cpp(527,22): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\GameSelector.cpp(1052,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\GameSelector.cpp(1052,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  ImitaterDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/ImitaterDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/ImitaterDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/ImitaterDialog.cpp')
+  
+Z:\Lawn\Widget\ImitaterDialog.cpp(90,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\ImitaterDialog.cpp(90,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  NewOptionsDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/NewOptionsDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/NewOptionsDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/NewOptionsDialog.cpp')
+  
+  NewUserDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/NewUserDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/NewUserDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/NewUserDialog.cpp')
+  
+Z:\Lawn\Widget\NewUserDialog.cpp(82,20): warning C4018: '<': signed/unsigned mismatch
+  TitleScreen.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/TitleScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/TitleScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/TitleScreen.cpp')
+  
+Z:\Lawn\Widget\TitleScreen.cpp(169,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\TitleScreen.cpp(173,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\TitleScreen.cpp(271,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Widget\TitleScreen.cpp(278,74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\TitleScreen.cpp(308,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  UserDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/UserDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/UserDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/UserDialog.cpp')
+  
+  ZenGarden.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/ZenGarden.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/ZenGarden.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/ZenGarden.cpp')
+  
+Z:\Lawn\ZenGarden.cpp(403,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\ZenGarden.cpp(425,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\ZenGarden.cpp(923,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(924,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(931,35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(932,35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(933,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(933,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(941,107): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(941,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(950,97): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(950,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(961,100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(961,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(972,107): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(972,84): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1126,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1127,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1256,12): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1280,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1281,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1306,103): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1377,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1388,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1389,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1640,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1712,107): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1731,52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1731,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(1891,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\ZenGarden.cpp(1974,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\ZenGarden.cpp(2230,18): warning C4244: 'initializing': conversion from '__time64_t' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(2443,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(2443,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(2448,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ZenGarden.cpp(2449,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Zombie.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Zombie.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Zombie.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Zombie.cpp')
+  
+Z:\Lawn\Zombie.cpp(91,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(234,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(312,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(350,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(391,34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(401,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1073,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1082,33): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1320,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1386,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(1420,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1420,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1472,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(1473,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(1478,63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(1478,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(1659,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1700,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1700,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1703,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1775,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1775,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1777,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1777,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1832,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1832,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1841,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1841,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1843,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1843,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1893,74): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(1897,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1897,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1899,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(1899,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2014,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2014,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2104,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2104,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2226,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2226,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2316,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2316,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2435,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2435,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2488,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2640,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2703,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2707,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2746,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2750,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2786,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2807,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2807,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(2826,53): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2827,53): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2828,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2829,59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(2830,25): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(2885,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3023,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3095,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3098,28): warning C4305: '+=': truncation from 'double' to 'float'
+Z:\Lawn\Zombie.cpp(3133,45): warning C4305: 'argument': truncation from 'double' to 'float'
+Z:\GameConstants.h(5,27): warning C4305: '=': truncation from 'const double' to 'float'
+  (compiling source file '../Lawn/Zombie.cpp')
+  
+Z:\Lawn\Zombie.cpp(3160,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3161,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3260,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(3263,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3317,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3830,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(3912,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(3919,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(4044,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4044,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4048,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4048,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4055,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4055,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4059,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4059,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(4298,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(4718,13): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(4973,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(5032,23): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(5035,77): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(5061,73): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(5061,73): warning C4244:         with
+Z:\Lawn\Zombie.cpp(5061,73): warning C4244:         [
+Z:\Lawn\Zombie.cpp(5061,73): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(5061,73): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(5062,53): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(5062,53): warning C4244:         with
+Z:\Lawn\Zombie.cpp(5062,53): warning C4244:         [
+Z:\Lawn\Zombie.cpp(5062,53): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(5062,53): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(5062,31): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(5062,31): warning C4244:         with
+Z:\Lawn\Zombie.cpp(5062,31): warning C4244:         [
+Z:\Lawn\Zombie.cpp(5062,31): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(5062,31): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(5062,20): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(5062,20): warning C4244:         with
+Z:\Lawn\Zombie.cpp(5062,20): warning C4244:         [
+Z:\Lawn\Zombie.cpp(5062,20): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(5062,20): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(5450,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(5576,118): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(5576,104): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(5576,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(5771,24): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(5784,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(5789,58): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(5789,58): warning C4244:         with
+Z:\Lawn\Zombie.cpp(5789,58): warning C4244:         [
+Z:\Lawn\Zombie.cpp(5789,58): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(5789,58): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(5789,33): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(5789,33): warning C4244:         with
+Z:\Lawn\Zombie.cpp(5789,33): warning C4244:         [
+Z:\Lawn\Zombie.cpp(5789,33): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(5789,33): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(6245,122): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(6245,108): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(6245,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(7115,93): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(7115,87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(8143,48): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8200,24): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(8201,24): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(8211,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8211,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8216,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8216,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8265,31): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(8265,31): warning C4244:         with
+Z:\Lawn\Zombie.cpp(8265,31): warning C4244:         [
+Z:\Lawn\Zombie.cpp(8265,31): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(8265,31): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(8268,40): warning C4244: '-=': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(8268,40): warning C4244:         with
+Z:\Lawn\Zombie.cpp(8268,40): warning C4244:         [
+Z:\Lawn\Zombie.cpp(8268,40): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(8268,40): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(8290,31): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(8290,31): warning C4244:         with
+Z:\Lawn\Zombie.cpp(8290,31): warning C4244:         [
+Z:\Lawn\Zombie.cpp(8290,31): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(8290,31): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(8293,40): warning C4244: '-=': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Zombie.cpp(8293,40): warning C4244:         with
+Z:\Lawn\Zombie.cpp(8293,40): warning C4244:         [
+Z:\Lawn\Zombie.cpp(8293,40): warning C4244:             _T=int
+Z:\Lawn\Zombie.cpp(8293,40): warning C4244:         ]
+Z:\Lawn\Zombie.cpp(8308,74): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8308,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8311,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8311,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8323,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8323,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8326,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8326,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(8800,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(8842,13): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(9508,73): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(9585,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(9608,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(9807,17): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(9876,17): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(10015,17): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(10065,26): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(10066,92): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(10066,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Zombie.cpp(10156,56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(10156,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Zombie.cpp(10469,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Zombie.cpp(10679,21): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  main.cpp
+  Resources.cpp
+  GameButton.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/GameButton.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/GameButton.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/GameButton.cpp')
+  
+Z:\Lawn\Widget\GameButton.cpp(153,48): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\Widget\GameButton.cpp(346,34): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\Lawn\Widget\GameButton.cpp(390,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\GameButton.cpp(390,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameObject.cpp
+  GridItem.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/GridItem.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/GridItem.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/GridItem.cpp')
+  
+Z:\Lawn\GridItem.cpp(70,72): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\GridItem.cpp(70,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\GridItem.cpp(93,53): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\GridItem.cpp(173,45): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\GridItem.cpp(254,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\GridItem.cpp(255,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\GridItem.cpp(256,36): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\GridItem.cpp(427,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\GridItem.cpp(427,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\GridItem.cpp(610,27): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\GridItem.cpp(610,27): warning C4244:         with
+Z:\Lawn\GridItem.cpp(610,27): warning C4244:         [
+Z:\Lawn\GridItem.cpp(610,27): warning C4244:             _T=int
+Z:\Lawn\GridItem.cpp(610,27): warning C4244:         ]
+Z:\Lawn\GridItem.cpp(610,20): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\GridItem.cpp(610,20): warning C4244:         with
+Z:\Lawn\GridItem.cpp(610,20): warning C4244:         [
+Z:\Lawn\GridItem.cpp(610,20): warning C4244:             _T=int
+Z:\Lawn\GridItem.cpp(610,20): warning C4244:         ]
+  ImageLib.cpp
+  LawnApp.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../LawnApp.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../LawnApp.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../LawnApp.cpp')
+  
+Z:\LawnApp.cpp(109,24): warning C4244: '=': conversion from '__time64_t' to 'int', possible loss of data
+Z:\LawnApp.cpp(704,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1272,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1304,32): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1314,32): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1668,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1711,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1730,14): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(1737,14): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\LawnApp.cpp(2656,20): warning C4018: '<': signed/unsigned mismatch
+  LawnCommon.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/LawnCommon.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/LawnCommon.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/LawnCommon.cpp')
+  
+  LawnDialog.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/LawnDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/LawnDialog.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/LawnDialog.cpp')
+  
+Z:\Lawn\Widget\LawnDialog.cpp(289,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\LawnDialog.cpp(289,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\LawnDialog.cpp(420,15): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\LawnDialog.cpp(420,12): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  MessageWidget.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/MessageWidget.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/MessageWidget.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/MessageWidget.cpp')
+  
+Z:\Lawn\MessageWidget.cpp(111,4): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\MessageWidget.cpp(144,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\MessageWidget.cpp(159,84): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\MessageWidget.cpp(296,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\MessageWidget.cpp(388,3): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\MessageWidget.cpp(396,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\MessageWidget.cpp(398,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  PakInterface.cpp
+  Generating Code...
+Z:\Lawn\MessageWidget.cpp(297,1): warning C4715: 'MessageWidget::GetFont': not all control paths return a value
+Z:\Resources.cpp(41,1): warning C4715: 'Sexy::ExtractResourcesByName': not all control paths return a value
+Z:\Lawn\Zombie.cpp(9586,1): warning C4715: 'Zombie::GetBobsledPosition': not all control paths return a value
+Z:\Lawn\ZenGarden.cpp(426,1): warning C4715: 'ZenGarden::GetPlantSellPrice': not all control paths return a value
+  Compiling...
+  Plant.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Plant.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Plant.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Plant.cpp')
+  
+Z:\Lawn\Plant.cpp(707,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(707,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(871,136): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(871,95): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(871,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(871,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(872,33): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(878,29): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(911,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(912,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(926,21): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Plant.cpp(1116,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1116,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1146,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1146,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1215,79): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(1215,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(1241,75): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1241,66): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1244,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1244,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1322,130): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(1491,57): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(1514,62): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(1552,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1552,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(1566,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2110,81): warning C4244: 'argument': conversion from '_T' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2110,81): warning C4244:         with
+Z:\Lawn\Plant.cpp(2110,81): warning C4244:         [
+Z:\Lawn\Plant.cpp(2110,81): warning C4244:             _T=int
+Z:\Lawn\Plant.cpp(2110,81): warning C4244:         ]
+Z:\Lawn\Plant.cpp(2110,65): warning C4244: 'argument': conversion from '_T' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2110,65): warning C4244:         with
+Z:\Lawn\Plant.cpp(2110,65): warning C4244:         [
+Z:\Lawn\Plant.cpp(2110,65): warning C4244:             _T=int
+Z:\Lawn\Plant.cpp(2110,65): warning C4244:         ]
+Z:\Lawn\Plant.cpp(2110,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2110,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2162,103): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2163,54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2182,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2182,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2199,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Plant.cpp(2223,41): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Plant.cpp(2270,65): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Plant.cpp(2388,15): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(2428,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2428,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(2480,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(2481,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(2486,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(2488,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(3154,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3154,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3162,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3162,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3602,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3603,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3604,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(3724,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(3725,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(3825,17): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Plant.cpp(3830,101): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(3830,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(4058,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4358,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4358,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4371,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4371,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4408,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4408,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4422,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4492,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4492,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4510,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Plant.cpp(4577,9): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Plant.cpp(4708,53): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4708,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4713,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4713,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4718,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4718,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4732,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4748,57): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4808,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4934,119): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4934,78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Plant.cpp(4934,27): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  PopDRMComm.cpp
+  SeedChooserScreen.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/SeedChooserScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/SeedChooserScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/SeedChooserScreen.cpp')
+  
+Z:\Lawn\Widget\SeedChooserScreen.cpp(291,8): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(364,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(364,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(402,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(402,22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(415,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(415,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(815,64): warning C4244: 'argument': conversion from 'float' to '_T', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(815,64): warning C4244:         with
+Z:\Lawn\Widget\SeedChooserScreen.cpp(815,64): warning C4244:         [
+Z:\Lawn\Widget\SeedChooserScreen.cpp(815,64): warning C4244:             _T=int
+Z:\Lawn\Widget\SeedChooserScreen.cpp(815,64): warning C4244:         ]
+Z:\Lawn\Widget\SeedChooserScreen.cpp(875,22): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\Widget\SeedChooserScreen.cpp(903,43): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  SeedPacket.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/SeedPacket.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/SeedPacket.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/SeedPacket.cpp')
+  
+Z:\Lawn\SeedPacket.cpp(94,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\SeedPacket.cpp(94,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\SeedPacket.cpp(529,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\SeedPacket.cpp(529,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\SeedPacket.cpp(561,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\SeedPacket.cpp(561,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\SeedPacket.cpp(602,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\SeedPacket.cpp(603,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\SeedPacket.cpp(656,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\SeedPacket.cpp(786,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  StoreScreen.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/Widget/StoreScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/Widget/StoreScreen.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/Widget/StoreScreen.cpp')
+  
+Z:\Lawn\Widget\StoreScreen.cpp(151,5): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Widget\StoreScreen.cpp(377,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\StoreScreen.cpp(377,50): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\StoreScreen.cpp(381,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\StoreScreen.cpp(381,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Lawn\Widget\StoreScreen.cpp(582,57): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Lawn\Widget\StoreScreen.cpp(899,14): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  Attachment.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/Attachment.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/Attachment.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/Attachment.cpp')
+  
+Z:\Sexy.TodLib\Attachment.cpp(76,4): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  Definition.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/Definition.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/Definition.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/Definition.cpp')
+  
+Z:\Sexy.TodLib\Definition.cpp(726,42): warning C4477: 'sscanf' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'Sexy::SexyVector2 *'
+Z:\Sexy.TodLib\Definition.cpp(726,42): warning C4473: 'sscanf' : not enough arguments passed for format string
+  Z:\Sexy.TodLib\Definition.cpp(726,42):
+  placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  Z:\Sexy.TodLib\Definition.cpp(726,42):
+  the missing variadic argument 2 is required by format string '%f'
+  
+Z:\Sexy.TodLib\Definition.cpp(745,12): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+Z:\Sexy.TodLib\Definition.cpp(790,42): warning C4477: 'sscanf' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'int *'
+Z:\Sexy.TodLib\Definition.cpp(790,42): warning C4473: 'sscanf' : not enough arguments passed for format string
+  Z:\Sexy.TodLib\Definition.cpp(790,42):
+  placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  Z:\Sexy.TodLib\Definition.cpp(790,42):
+  the missing variadic argument 2 is required by format string '%f'
+  
+  EffectSystem.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/EffectSystem.cpp')
+  
+  FilterEffect.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/FilterEffect.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/FilterEffect.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/FilterEffect.cpp')
+  
+Z:\Sexy.TodLib\FilterEffect.cpp(110,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\FilterEffect.cpp(110,66): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\FilterEffect.cpp(110,99): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  ReanimAtlas.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/ReanimAtlas.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/ReanimAtlas.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/ReanimAtlas.cpp')
+  
+Z:\Sexy.TodLib\ReanimAtlas.cpp(91,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\ReanimAtlas.cpp(166,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+  Reanimator.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/Reanimator.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/Reanimator.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/Reanimator.cpp')
+  
+Z:\Sexy.TodLib\Reanimator.cpp(356,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(408,46): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(581,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(582,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(584,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(585,30): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(699,67): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(779,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(779,15): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(825,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(845,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(1141,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\Reanimator.cpp(1188,35): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  TodDebug.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/TodDebug.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodDebug.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodDebug.cpp')
+  
+  TodFoley.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/TodFoley.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodFoley.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodFoley.cpp')
+  
+  TodList.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/TodList.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodList.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodList.cpp')
+  
+  TodCommon.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/TodCommon.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodCommon.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodCommon.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.cpp(147,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Sexy.TodLib\TodCommon.cpp(175,2): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Sexy.TodLib\TodCommon.cpp(277,11): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(362,63): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(363,66): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(364,19): warning C4003: not enough arguments for function-like macro invocation 'TOD_ASSERT'
+Z:\Sexy.TodLib\TodCommon.cpp(415,102): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(415,84): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(523,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(524,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(525,36): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(535,56): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(652,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(653,20): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(655,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(656,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(665,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(668,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(672,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(675,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(678,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(682,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(930,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodCommon.cpp(1073,79): warning C4551: function call missing argument list
+Z:\Sexy.TodLib\TodCommon.cpp(1081,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  ToolTipWidget.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Lawn/ToolTipWidget.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Lawn/ToolTipWidget.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Lawn/ToolTipWidget.cpp')
+  
+Z:\Lawn\ToolTipWidget.cpp(76,20): warning C4018: '<': signed/unsigned mismatch
+Z:\Lawn\ToolTipWidget.cpp(135,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Lawn\ToolTipWidget.cpp(184,20): warning C4018: '<': signed/unsigned mismatch
+  TodParticle.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/TodParticle.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodParticle.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodParticle.cpp')
+  
+Z:\Sexy.TodLib\TodParticle.cpp(284,39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(286,39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(337,51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(352,142): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(357,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(375,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(376,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(431,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(432,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(499,36): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(500,36): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(547,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(556,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(638,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(646,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(664,138): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(676,25): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(751,34): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(752,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(956,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(958,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(988,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(989,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(1000,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(1000,15): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+Z:\Sexy.TodLib\TodParticle.cpp(1194,49): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  TodStringFile.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/TodStringFile.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodStringFile.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/TodStringFile.cpp')
+  
+Z:\Sexy.TodLib\TodStringFile.cpp(87,20): warning C4018: '<': signed/unsigned mismatch
+Z:\Sexy.TodLib\TodStringFile.cpp(265,45): warning C4018: '>': signed/unsigned mismatch
+Z:\Sexy.TodLib\TodStringFile.cpp(346,17): warning C4018: '<': signed/unsigned mismatch
+Z:\Sexy.TodLib\TodStringFile.cpp(410,21): warning C4018: '<': signed/unsigned mismatch
+Z:\Sexy.TodLib\TodStringFile.cpp(449,19): warning C4018: '<': signed/unsigned mismatch
+  Trail.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file '../Sexy.TodLib/Trail.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(133,82): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '../Sexy.TodLib/Trail.cpp')
+  
+Z:\Sexy.TodLib\TodCommon.h(135,80): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file '../Sexy.TodLib/Trail.cpp')
+  
+  GraphicsBuild.cpp
+Z:\SexyAppFramework\D3DInterface.cpp(2130,43): warning C4838: conversion from 'int' to 'D3DVALUE' requires a narrowing conversion
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\D3DInterface.cpp(2130,67): warning C4838: conversion from 'int' to 'D3DVALUE' requires a narrowing conversion
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\DDImage.cpp(2883,31): warning C4838: conversion from '_T' to 'LONG' requires a narrowing conversion
+Z:\SexyAppFramework\DDImage.cpp(2883,31): warning C4838:         with
+Z:\SexyAppFramework\DDImage.cpp(2883,31): warning C4838:         [
+Z:\SexyAppFramework\DDImage.cpp(2883,31): warning C4838:             _T=double
+Z:\SexyAppFramework\DDImage.cpp(2883,31): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\DDImage.cpp(2883,46): warning C4838: conversion from '_T' to 'LONG' requires a narrowing conversion
+Z:\SexyAppFramework\DDImage.cpp(2883,46): warning C4838:         with
+Z:\SexyAppFramework\DDImage.cpp(2883,46): warning C4838:         [
+Z:\SexyAppFramework\DDImage.cpp(2883,46): warning C4838:             _T=double
+Z:\SexyAppFramework\DDImage.cpp(2883,46): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\DDImage.cpp(2883,65): warning C4838: conversion from '_T' to 'LONG' requires a narrowing conversion
+Z:\SexyAppFramework\DDImage.cpp(2883,65): warning C4838:         with
+Z:\SexyAppFramework\DDImage.cpp(2883,65): warning C4838:         [
+Z:\SexyAppFramework\DDImage.cpp(2883,65): warning C4838:             _T=double
+Z:\SexyAppFramework\DDImage.cpp(2883,65): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\DDImage.cpp(2883,100): warning C4838: conversion from '_T' to 'LONG' requires a narrowing conversion
+Z:\SexyAppFramework\DDImage.cpp(2883,100): warning C4838:         with
+Z:\SexyAppFramework\DDImage.cpp(2883,100): warning C4838:         [
+Z:\SexyAppFramework\DDImage.cpp(2883,100): warning C4838:             _T=double
+Z:\SexyAppFramework\DDImage.cpp(2883,100): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1494,31): warning C4838: conversion from 'const _T' to 'float' requires a narrowing conversion
+Z:\SexyAppFramework\MemoryImage.cpp(1494,31): warning C4838:         with
+Z:\SexyAppFramework\MemoryImage.cpp(1494,31): warning C4838:         [
+Z:\SexyAppFramework\MemoryImage.cpp(1494,31): warning C4838:             _T=int
+Z:\SexyAppFramework\MemoryImage.cpp(1494,31): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1494,50): warning C4838: conversion from 'const _T' to 'float' requires a narrowing conversion
+Z:\SexyAppFramework\MemoryImage.cpp(1494,50): warning C4838:         with
+Z:\SexyAppFramework\MemoryImage.cpp(1494,50): warning C4838:         [
+Z:\SexyAppFramework\MemoryImage.cpp(1494,50): warning C4838:             _T=int
+Z:\SexyAppFramework\MemoryImage.cpp(1494,50): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1495,34): warning C4838: conversion from 'const _T' to 'float' requires a narrowing conversion
+Z:\SexyAppFramework\MemoryImage.cpp(1495,34): warning C4838:         with
+Z:\SexyAppFramework\MemoryImage.cpp(1495,34): warning C4838:         [
+Z:\SexyAppFramework\MemoryImage.cpp(1495,34): warning C4838:             _T=int
+Z:\SexyAppFramework\MemoryImage.cpp(1495,34): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1495,54): warning C4838: conversion from 'const _T' to 'float' requires a narrowing conversion
+Z:\SexyAppFramework\MemoryImage.cpp(1495,54): warning C4838:         with
+Z:\SexyAppFramework\MemoryImage.cpp(1495,54): warning C4838:         [
+Z:\SexyAppFramework\MemoryImage.cpp(1495,54): warning C4838:             _T=int
+Z:\SexyAppFramework\MemoryImage.cpp(1495,54): warning C4838:         ]
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1770,23): warning C4838: conversion from 'unsigned int' to 'long' requires a narrowing conversion
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1771,22): warning C4838: conversion from 'unsigned int' to 'long' requires a narrowing conversion
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1772,23): warning C4838: conversion from 'unsigned int' to 'long' requires a narrowing conversion
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\MemoryImage.cpp(1773,22): warning C4838: conversion from 'unsigned int' to 'long' requires a narrowing conversion
+  (compiling source file 'GraphicsBuild.cpp')
+  
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file 'GraphicsBuild.cpp')
+  
+  Generating Code...
+Z:\Sexy.TodLib\Definition.cpp(818,1): warning C4715: 'DefinitionReadImageField': not all control paths return a value
+Z:\Sexy.TodLib\Definition.cpp(831,1): warning C4715: 'DefinitionReadFontField': not all control paths return a value
+Z:\Sexy.TodLib\Attachment.cpp(799,1): warning C4715: 'FindReanimAttachment': not all control paths return a value
+Z:\Lawn\Widget\SeedChooserScreen.cpp(204,1): warning C4715: 'SeedChooserScreen::PickFromWeightedArrayUsingSpecialRandSeed': not all control paths return a value
+Z:\Lawn\Plant.cpp(2015,1): warning C4715: 'Plant::DrawMagnetItemsOnTop': not all control paths return a value
+  Compiling...
+  MiscBuildBase.cpp
+Z:\SexyAppFramework\SEHCatcher.cpp(369,19): warning C4477: 'sprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 3 has type 'PVOID'
+  (compiling source file 'MiscBuildBase.cpp')
+  
+Z:\SexyAppFramework\SEHCatcher.cpp(375,19): warning C4477: 'sprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 2 has type 'PVOID'
+  (compiling source file 'MiscBuildBase.cpp')
+  
+Z:\SexyAppFramework\SEHCatcher.cpp(489,26): warning C4477: 'sprintf' : format string '%08X' requires an argument of type 'unsigned int', but variadic argument 2 has type 'PDWORD'
+  (compiling source file 'MiscBuildBase.cpp')
+  
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file 'MiscBuildBase.cpp')
+  
+  SexyApp.cpp
+Z:\SexyAppFramework\SexyApp.cpp(65,2): warning C4150: deletion of pointer to incomplete type 'Sexy::BetaSupport'; no destructor called
+  Z:\SexyAppFramework\SexyApp.h(10,7):
+  see declaration of 'Sexy::BetaSupport'
+  
+Z:\SexyAppFramework\SexyApp.cpp(66,2): warning C4150: deletion of pointer to incomplete type 'Sexy::InternetManager'; no destructor called
+  Z:\SexyAppFramework\SexyApp.h(9,7):
+  see declaration of 'Sexy::InternetManager'
+  
+Z:\SexyAppFramework\SexyApp.cpp(216,28): warning C4244: '=': conversion from 'time_t' to 'ulong', possible loss of data
+Z:\SexyAppFramework\SexyApp.cpp(273,16): warning C4267: 'initializing': conversion from 'size_t' to 'ushort', possible loss of data
+Z:\SexyAppFramework\SexyApp.cpp(419,27): warning C4244: '=': conversion from 'time_t' to 'ulong', possible loss of data
+Z:\SexyAppFramework\SexyApp.cpp(543,31): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  SexyAppBase.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file 'SexyAppBase.cpp')
+  
+Z:\SexyAppFramework\SexyAppBase.cpp(671,19): warning C4267: 'initializing': conversion from 'size_t' to 'ushort', possible loss of data
+Z:\SexyAppFramework\SexyAppBase.cpp(3661,18): warning C4477: 'sprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'HWND'
+  SoundBuild.cpp
+Z:\SexyAppFramework\DSoundManager.cpp(912,17): warning C4267: 'initializing': conversion from 'size_t' to 'ushort', possible loss of data
+  (compiling source file 'SoundBuild.cpp')
+  
+  SWTri.cpp
+  WidgetBuildBase.cpp
+Z:\SexyAppFramework\KeyCodes.h(102,2): warning C4091: 'typedef ': ignored on left of 'Sexy::KeyCode' when no variable is declared
+  (compiling source file 'WidgetBuildBase.cpp')
+  
+  Generating Code...
+  cdjpeg.c
+  jcapimin.c
+  jcapistd.c
+  jccoefct.c
+  jccolor.c
+  jcdctmgr.c
+  jchuff.c
+  jcinit.c
+  jcmainct.c
+  jcmarker.c
+  jcmaster.c
+  jcomapi.c
+  jcparam.c
+  jcphuff.c
+  jcprepct.c
+  jcsample.c
+  jctrans.c
+  jdapimin.c
+  jdapistd.c
+  jdatadst.c
+  Generating Code...
+  Compiling...
+  jdatasrc.c
+  jdcoefct.c
+  jdcolor.c
+  jddctmgr.c
+  jdhuff.c
+  jdinput.c
+  jdmainct.c
+  jdmarker.c
+  jdmaster.c
+  jdmerge.c
+  jdphuff.c
+  jdpostct.c
+  jdsample.c
+  jdtrans.c
+  jerror.c
+  jfdctflt.c
+  jfdctfst.c
+  jfdctint.c
+  jidctflt.c
+  jidctfst.c
+  Generating Code...
+  Compiling...
+  jidctint.c
+  jidctred.c
+  jmemmgr.c
+  jmemnobs.c
+  jquant1.c
+  jquant2.c
+  jutils.c
+  rdbmp.c
+  rdcolmap.c
+  rdgif.c
+  rdppm.c
+  rdrle.c
+  rdswitch.c
+  rdtarga.c
+  transupp.c
+  wrbmp.c
+  wrgif.c
+  wrppm.c
+  wrrle.c
+  wrtarga.c
+  Generating Code...
+  Compiling...
+  png.c
+  pngerror.c
+  pngget.c
+  pngmem.c
+  pngpread.c
+  pngread.c
+  pngrio.c
+  pngrtran.c
+  pngrutil.c
+  pngset.c
+  pngtrans.c
+  pngvcrd.c
+  pngwio.c
+  pngwrite.c
+  pngwtran.c
+  pngwutil.c
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  Generating Code...
+  Compiling...
+  gzio.c
+  infblock.c
+  infcodes.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  infutil.c
+  trees.c
+  uncompr.c
+  zutil.c
+  bitwise.c
+  block.c
+  codebook.c
+  floor0.c
+  floor1.c
+  framing.c
+  info.c
+  mapping0.c
+  mdct.c
+  registry.c
+  Generating Code...
+  Compiling...
+  res012.c
+  sharedbook.c
+  synthesis.c
+  vorbisfile.c
+  window.c
+  Generating Code...
+Board.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  SexyAppBase.vcxproj -> Z:\Debug\LawnProject.exe
