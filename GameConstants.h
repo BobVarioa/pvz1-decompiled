@@ -7,16 +7,28 @@ constexpr const double PI = 3.141592653589793;
 // ============================================================
 // ■ 常数
 // ============================================================
-const int			BOARD_WIDTH = 800;
+#ifdef _WIDESCREEN
+const int			SCREEN_PAD = 133;
+const int			BOARD_WIDTH = 800 + 2*SCREEN_PAD;
 const int			BOARD_HEIGHT = 600;
 const int			WIDE_BOARD_WIDTH = 800;
-const int			BOARD_OFFSET = 220;
+
+const int			BOARD_OFFSET_X = 220;
+const int			BOARD_OFFSET_Y = 0;
+const int           BOARD_ADDITIONAL_WIDTH = 133;
 const int			BOARD_EDGE = -100;
-const int			BOARD_IMAGE_WIDTH_OFFSET = 1180;
+const int			BOARD_IMAGE_WIDTH_OFFSET = 1180 + SCREEN_PAD;
 const int           BOARD_ICE_START = 800;
 const int           LAWN_XMIN = 40;
 const int           LAWN_YMIN = 80;
 const int           HIGH_GROUND_HEIGHT = 30;
+
+const int           STREET_ZOMBIE_START_X = 1000;
+const int           STREET_ZOMBIE_ROOF_START_X = 900;
+const int           STREET_ZOMBIE_START_Y = 70;
+const int           STREET_ZOMBIE_GRID_SIZE_X = 30;
+const int           STREET_ZOMBIE_GRID_SIZE_Y = 90;
+const int           STREET_ZOMBIE_ROOF_OFFSET = 30;
 
 const int           SEEDBANK_MAX = 10;
 const int           SEED_BANK_OFFSET_X = 0;
@@ -26,6 +38,44 @@ const int           SEED_PACKET_WIDTH = 50;
 const int           SEED_PACKET_HEIGHT = 70;
 const int           IMITATER_DIALOG_WIDTH = 500;
 const int           IMITATER_DIALOG_HEIGHT = 600;
+
+const int			PLANTSHADOW_OFFSET = 2000;
+
+#else
+const int			SCREEN_PAD = 0;
+const int			BOARD_WIDTH = 800;
+const int			BOARD_HEIGHT = 600;
+const int			WIDE_BOARD_WIDTH = 800;
+
+const int			BOARD_OFFSET_X = 220;
+const int			BOARD_OFFSET_Y = 0;
+const int           BOARD_ADDITIONAL_WIDTH = 0;
+const int			BOARD_EDGE = -100;
+const int			BOARD_IMAGE_WIDTH_OFFSET = 1180;
+const int           BOARD_ICE_START = 800;
+const int           LAWN_XMIN = 40;
+const int           LAWN_YMIN = 80;
+const int           HIGH_GROUND_HEIGHT = 30;
+
+const int           STREET_ZOMBIE_START_X = 830;
+const int           STREET_ZOMBIE_ROOF_START_X = 900;
+const int           STREET_ZOMBIE_START_Y = 70;
+const int           STREET_ZOMBIE_GRID_SIZE_X = 56;
+const int           STREET_ZOMBIE_GRID_SIZE_Y = 90;
+const int           STREET_ZOMBIE_ROOF_OFFSET = 15;
+
+const int           SEEDBANK_MAX = 10;
+const int           SEED_BANK_OFFSET_X = 0;
+const int           SEED_BANK_OFFSET_X_END = 10;
+const int           SEED_CHOOSER_OFFSET_Y = 516;
+const int           SEED_PACKET_WIDTH = 50;
+const int           SEED_PACKET_HEIGHT = 70;
+const int           IMITATER_DIALOG_WIDTH = 500;
+const int           IMITATER_DIALOG_HEIGHT = 600;
+
+const int			PLANTSHADOW_OFFSET = 1000;
+
+#endif
 
 // ============================================================
 // ■ 关卡相关

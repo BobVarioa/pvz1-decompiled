@@ -54,7 +54,7 @@ TitleScreen::~TitleScreen()
 
 void TitleScreen::DrawToPreload(Graphics* g)
 {
-	g->DrawImageF(IMAGE_PLANTSHADOW, 1000.0f, 0.0f);
+	g->DrawImageF(IMAGE_PLANTSHADOW, (float)PLANTSHADOW_OFFSET, 0.0f);
 }
 
 //0x48D730
@@ -173,7 +173,14 @@ void TitleScreen::Draw(Graphics* g)
 		float aRotation = -aRollLen / 180 * PI * 2;
 		float aScale = TodAnimateCurveFloatTime(0, mTotalBarWidth, mCurBarWidth, 1, 0.5f, TodCurves::CURVE_LINEAR);
 		SexyTransform2D aTransform;
-		TodScaleRotateTransformMatrix(aTransform, aGrassX + 11.0f + aRollLen, aGrassY - 3.0f - 35.0f * aScale + 35.0f, aRotation, aScale, aScale);
+		TodScaleRotateTransformMatrix(
+			aTransform, 
+			aGrassX + 11.0f + aRollLen,
+			aGrassY - 3.0f - 35.0f * aScale + 35.0f, 
+			aRotation, 
+			aScale, 
+			aScale
+		);
 		Rect aSrcRect(0, 0, IMAGE_REANIM_SODROLLCAP->mWidth, IMAGE_REANIM_SODROLLCAP->mHeight);
 		TodBltMatrix(g, IMAGE_REANIM_SODROLLCAP, aTransform, g->mClipRect, Color::White, g->mDrawMode, aSrcRect);
 	}
@@ -436,7 +443,7 @@ void TitleScreen::Update()
 			{
 				aReanimType = ReanimationType::REANIM_LOADBAR_ZOMBIEHEAD;
 			}
-			float aPosX = aTriggerPoint[i] + 225.0f;
+			float aPosX = aTriggerPoint[i] + 225.0f + SCREEN_PAD;
 			float aPosY = 511.0f;
 			Reanimation* aSproutReanim = mApp->AddReanimation(aPosX, aPosY, 0, aReanimType);
 			aSproutReanim->mAnimRate = 18.0f;

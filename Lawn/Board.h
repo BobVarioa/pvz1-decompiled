@@ -218,6 +218,7 @@ public:
 	int								mDiamondsCollected;										//+0x57A4
 	int								mPottedPlantsCollected;									//+0x57A8
 	int								mChocolateCollected;									//+0x57AC
+	int								mRoofPoleOffset;										// CHANGE: widescreen support
 
 public:
 	Board(LawnApp* theApp);

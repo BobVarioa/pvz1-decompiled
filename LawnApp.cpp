@@ -119,6 +119,8 @@ LawnApp::LawnApp()
 #ifdef _DEBUG
 	aTitleName += " BETA ";
 	aTitleName += mProductVersion;
+
+	aTitleName += std::to_string(BOARD_WIDTH) + "x" + std::to_string(BOARD_HEIGHT);
 #endif
 
 	mTitle = StringToSexyStringFast(aTitleName);

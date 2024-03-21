@@ -75,7 +75,11 @@ bool Sexy::ExtractDelayLoad_AlmanacResources(ResourceManager* theManager)
 		IMAGE_ALMANAC_GROUNDNIGHTPOOL = aMgr.GetImageThrow("IMAGE_ALMANAC_GROUNDNIGHTPOOL");
 		IMAGE_ALMANAC_GROUNDPOOL = aMgr.GetImageThrow("IMAGE_ALMANAC_GROUNDPOOL");
 		IMAGE_ALMANAC_GROUNDROOF = aMgr.GetImageThrow("IMAGE_ALMANAC_GROUNDROOF");
+#ifdef _WIDESCREEN
+		IMAGE_ALMANAC_INDEXBACK = aMgr.GetImageThrow("IMAGE_ALMANAC_INDEXBACK_WIDESCREEN");
+#else
 		IMAGE_ALMANAC_INDEXBACK = aMgr.GetImageThrow("IMAGE_ALMANAC_INDEXBACK");
+#endif
 		IMAGE_ALMANAC_INDEXBUTTON = aMgr.GetImageThrow("IMAGE_ALMANAC_INDEXBUTTON");
 		IMAGE_ALMANAC_INDEXBUTTONHIGHLIGHT = aMgr.GetImageThrow("IMAGE_ALMANAC_INDEXBUTTONHIGHLIGHT");
 		IMAGE_ALMANAC_PLANTBACK = aMgr.GetImageThrow("IMAGE_ALMANAC_PLANTBACK");
@@ -103,7 +107,11 @@ bool Sexy::ExtractDelayLoad_AwardScreenResources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_AWARDSCREEN_BACK = aMgr.GetImageThrow("IMAGE_AWARDSCREEN_BACK_WIDESCREEN");
+#else
 		IMAGE_AWARDSCREEN_BACK = aMgr.GetImageThrow("IMAGE_AWARDSCREEN_BACK");
+#endif
 	}
 	catch (ResourceManagerException&)
 	{
@@ -124,7 +132,11 @@ bool Sexy::ExtractDelayLoad_Background1Resources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND1 = aMgr.GetImageThrow("IMAGE_BACKGROUND1_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND1 = aMgr.GetImageThrow("IMAGE_BACKGROUND1");
+#endif
 		IMAGE_BACKGROUND1_GAMEOVER_INTERIOR_OVERLAY = aMgr.GetImageThrow("IMAGE_BACKGROUND1_GAMEOVER_INTERIOR_OVERLAY");
 		IMAGE_BACKGROUND1_GAMEOVER_MASK = aMgr.GetImageThrow("IMAGE_BACKGROUND1_GAMEOVER_MASK");
 	}
@@ -147,7 +159,11 @@ bool Sexy::ExtractDelayLoad_Background2Resources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND2 = aMgr.GetImageThrow("IMAGE_BACKGROUND2_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND2 = aMgr.GetImageThrow("IMAGE_BACKGROUND2");
+#endif
 		IMAGE_BACKGROUND2_GAMEOVER_INTERIOR_OVERLAY = aMgr.GetImageThrow("IMAGE_BACKGROUND2_GAMEOVER_INTERIOR_OVERLAY");
 		IMAGE_BACKGROUND2_GAMEOVER_MASK = aMgr.GetImageThrow("IMAGE_BACKGROUND2_GAMEOVER_MASK");
 	}
@@ -170,7 +186,11 @@ bool Sexy::ExtractDelayLoad_Background3Resources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND3 = aMgr.GetImageThrow("IMAGE_BACKGROUND3_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND3 = aMgr.GetImageThrow("IMAGE_BACKGROUND3");
+#endif
 		IMAGE_BACKGROUND3_GAMEOVER_INTERIOR_OVERLAY = aMgr.GetImageThrow("IMAGE_BACKGROUND3_GAMEOVER_INTERIOR_OVERLAY");
 		IMAGE_BACKGROUND3_GAMEOVER_MASK = aMgr.GetImageThrow("IMAGE_BACKGROUND3_GAMEOVER_MASK");
 	}
@@ -195,7 +215,11 @@ bool Sexy::ExtractDelayLoad_Background4Resources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND4 = aMgr.GetImageThrow("IMAGE_BACKGROUND4_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND4 = aMgr.GetImageThrow("IMAGE_BACKGROUND4");
+#endif
 		IMAGE_BACKGROUND4_GAMEOVER_INTERIOR_OVERLAY = aMgr.GetImageThrow("IMAGE_BACKGROUND4_GAMEOVER_INTERIOR_OVERLAY");
 		IMAGE_BACKGROUND4_GAMEOVER_MASK = aMgr.GetImageThrow("IMAGE_BACKGROUND4_GAMEOVER_MASK");
 		IMAGE_FOG = aMgr.GetImageThrow("IMAGE_FOG");
@@ -219,7 +243,11 @@ bool Sexy::ExtractDelayLoad_Background5Resources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND5 = aMgr.GetImageThrow("IMAGE_BACKGROUND5_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND5 = aMgr.GetImageThrow("IMAGE_BACKGROUND5");
+#endif
 		IMAGE_BACKGROUND5_GAMEOVER_MASK = aMgr.GetImageThrow("IMAGE_BACKGROUND5_GAMEOVER_MASK");
 	}
 	catch (ResourceManagerException&)
@@ -240,7 +268,11 @@ bool Sexy::ExtractDelayLoad_Background6Resources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND6BOSS = aMgr.GetImageThrow("IMAGE_BACKGROUND6BOSS_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND6BOSS = aMgr.GetImageThrow("IMAGE_BACKGROUND6BOSS");
+#endif
 		IMAGE_BACKGROUND6_GAMEOVER_MASK = aMgr.GetImageThrow("IMAGE_BACKGROUND6_GAMEOVER_MASK");
 	}
 	catch (ResourceManagerException&)
@@ -262,7 +294,11 @@ bool Sexy::ExtractDelayLoad_BackgroundUnsoddedResources(ResourceManager* theMana
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND1UNSODDED = aMgr.GetImageThrow("IMAGE_BACKGROUND1UNSODDED_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND1UNSODDED = aMgr.GetImageThrow("IMAGE_BACKGROUND1UNSODDED");
+#endif
 		IMAGE_SOD1ROW = aMgr.GetImageThrow("IMAGE_SOD1ROW");
 		IMAGE_SOD3ROW = aMgr.GetImageThrow("IMAGE_SOD3ROW");
 	}
@@ -290,7 +326,11 @@ bool Sexy::ExtractDelayLoad_ChallengeScreenResources(ResourceManager* theManager
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_CHALLENGE_BACKGROUND = aMgr.GetImageThrow("IMAGE_CHALLENGE_BACKGROUND_WIDESCREEN");
+#else
 		IMAGE_CHALLENGE_BACKGROUND = aMgr.GetImageThrow("IMAGE_CHALLENGE_BACKGROUND");
+#endif 
 		IMAGE_CHALLENGE_BLANK = aMgr.GetImageThrow("IMAGE_CHALLENGE_BLANK");
 		IMAGE_CHALLENGE_THUMBNAILS = aMgr.GetImageThrow("IMAGE_CHALLENGE_THUMBNAILS");
 		IMAGE_CHALLENGE_WINDOW = aMgr.GetImageThrow("IMAGE_CHALLENGE_WINDOW");
@@ -357,7 +397,11 @@ bool Sexy::ExtractDelayLoad_GreenHouseGardenResources(ResourceManager* theManage
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND_GREENHOUSE = aMgr.GetImageThrow("IMAGE_BACKGROUND_GREENHOUSE_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND_GREENHOUSE = aMgr.GetImageThrow("IMAGE_BACKGROUND_GREENHOUSE");
+#endif
 	}
 	catch (ResourceManagerException&)
 	{
@@ -395,7 +439,11 @@ bool Sexy::ExtractDelayLoad_MushroomGardenResources(ResourceManager* theManager)
 	ResourceManager& aMgr = *theManager;
 	try
 	{
+#ifdef _WIDESCREEN
+		IMAGE_BACKGROUND_MUSHROOMGARDEN = aMgr.GetImageThrow("IMAGE_BACKGROUND_MUSHROOMGARDEN_WIDESCREEN");
+#else
 		IMAGE_BACKGROUND_MUSHROOMGARDEN = aMgr.GetImageThrow("IMAGE_BACKGROUND_MUSHROOMGARDEN");
+#endif
 	}
 	catch (ResourceManagerException&)
 	{
@@ -688,7 +736,11 @@ bool Sexy::ExtractLoaderBarResources(ResourceManager* theManager)
 		IMAGE_LOADBAR_GRASS = aMgr.GetImageThrow("IMAGE_LOADBAR_GRASS");
 		IMAGE_PVZ_LOGO = aMgr.GetImageThrow("IMAGE_PVZ_LOGO");
 		IMAGE_REANIM_SODROLLCAP = aMgr.GetImageThrow("IMAGE_REANIM_SODROLLCAP");
+#ifdef _WIDESCREEN
+		IMAGE_TITLESCREEN = aMgr.GetImageThrow("IMAGE_TITLESCREEN_WIDESCREEN");
+#else
 		IMAGE_TITLESCREEN = aMgr.GetImageThrow("IMAGE_TITLESCREEN");
+#endif 
 		SOUND_BUTTONCLICK = aMgr.GetSoundThrow("SOUND_BUTTONCLICK");
 		SOUND_LOADINGBAR_FLOWER = aMgr.GetSoundThrow("SOUND_LOADINGBAR_FLOWER");
 		SOUND_LOADINGBAR_ZOMBIE = aMgr.GetSoundThrow("SOUND_LOADINGBAR_ZOMBIE");
