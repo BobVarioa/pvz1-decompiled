@@ -331,7 +331,7 @@ void ZenGarden::FindOpenZenGardenSpot(int& theSpotX, int& theSpotY)
         {
             if (mApp->mCrazyDaveMessageIndex != -1 && (x < 2 || y < 1))
             {
-                continue;  // 忽略被戴夫遮挡住的部分
+                continue;  // Ignore the parts obscured by Dave
             }
 
             for (int i = 0; i < mApp->mPlayerInfo->mNumPottedPlants; i++)
@@ -339,7 +339,7 @@ void ZenGarden::FindOpenZenGardenSpot(int& theSpotX, int& theSpotY)
                 PottedPlant* aPottedPlant = PottedPlantFromIndex(i);
                 if (aPottedPlant->mWhichZenGarden == GardenType::GARDEN_MAIN && aPottedPlant->mX == x && aPottedPlant->mY == y)
                 {
-                    continue;  // 格子内已有盆栽植物则不可选择
+                    continue;  // If there are already potted plants in the grid, you cannot select them.
                 }
             }
 

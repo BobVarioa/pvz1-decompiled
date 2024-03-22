@@ -142,18 +142,18 @@ bool PakInterface::AddPakFile(const std::string& theFileName)
 //0x5D84D0
 static void FixFileName(const char* theFileName, char* theUpperName)
 {
-	// 检测路径是否为从盘符开始的绝对路径
+	// Check whether the path is an absolute path starting from the drive letter
 	if ((theFileName[0] != 0) && (theFileName[1] == ':'))
 	{
 		char aDir[256];
-		getcwd(aDir, 256);  // 取得当前工作路径
+		getcwd(aDir, 256);  // Get current working path
 		int aLen = strlen(aDir);
 		aDir[aLen++] = '\\';
 		aDir[aLen] = 0;
 
-		// 判断 theFileName 文件是否位于当前目录下
+		// Determine whether the file theFileName is located in the current directory
 		if (strnicmp(aDir, theFileName, aLen) == 0)
-			theFileName += aLen;  // 若是，则跳过从盘符到当前目录的部分，转化为相对路径
+			theFileName += aLen;  // If so, skip the part from the drive letter to the current directory and convert it to a relative path.
 	}
 
 	bool lastSlash = false;
@@ -166,7 +166,7 @@ static void FixFileName(const char* theFileName, char* theUpperName)
 
 		if ((c == '\\') || (c == '/'))
 		{
-			// 统一转为右斜杠，且多个斜杠的情况下只保留一个
+			// Convert them to right slashes uniformly, and if there are multiple slashes, only one is retained.
 			if (!lastSlash)
 				*(aDest++) = '\\';
 			lastSlash = true;
@@ -175,10 +175,10 @@ static void FixFileName(const char* theFileName, char* theUpperName)
 		{
 			// We have a '/..' on our hands
 			aDest--;
-			while ((aDest > theUpperName + 1) && (*(aDest-1) != '\\'))  // 回退到上一层目录
+			while ((aDest > theUpperName + 1) && (*(aDest-1) != '\\'))  // Return to the previous directory
 				--aDest;
 			aSrc++;
-			// 此处将形如“a\b\..\c”的路径简化为“a\c”
+			// Here, the path in the form of "a\b\..\c" is simplified to "a\c"
 		}
 		else
 		{
@@ -240,7 +240,7 @@ int PakInterface::FSeek(PFILE* theFile, long theOffset, int theOrigin)
 		else if (theOrigin == SEEK_CUR)
 			theFile->mPos += theOffset;
 
-		// 当前指针位置不能超过整个文件的大小，且不能小于 0
+		// The current pointer position cannot exceed the size of the entire file and cannot be less than 0
 		theFile->mPos = max(min(theFile->mPos, theFile->mRecord->mSize), 0);
 		return 0;
 	}
@@ -262,16 +262,16 @@ size_t PakInterface::FRead(void* thePtr, int theElemSize, int theCount, PFILE* t
 {
 	if (theFile->mRecord != NULL)
 	{
-		// 实际读取的字节数不能超过当前资源文件剩余可读取的字节数
+		// The actual number of bytes read cannot exceed the remaining readable bytes of the current resource file.
 		int aSizeBytes = min(theElemSize*theCount, theFile->mRecord->mSize - theFile->mPos);
 
-		// 取得在整个 pak 中开始读取的位置的指针
+		// Get the pointer to the starting position of reading in the entire pak
 		uchar* src = (uchar*) theFile->mRecord->mCollection->mDataPtr + theFile->mRecord->mStartPos + theFile->mPos;
 		uchar* dest = (uchar*) thePtr;
 		for (int i = 0; i < aSizeBytes; i++)
 			*(dest++) = (*src++) ^ 0xF7; // 'Decrypt'
-		theFile->mPos += aSizeBytes;  // 读取完成后，移动当前读取位置的指针
-		return aSizeBytes / theElemSize;  // 返回实际读取的项数
+		theFile->mPos += aSizeBytes;  // After the reading is completed, move the pointer of the current reading position
+		return aSizeBytes / theElemSize;  // Returns the actual number of items read
 	}
 	
 	return fread(thePtr, theElemSize, theCount, theFile->mFP);	

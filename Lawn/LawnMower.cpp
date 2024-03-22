@@ -206,7 +206,7 @@ void LawnMower::Update()
             int aOverlap = GetRectOverlap(aAttackRect, aZombieRect);
             if (aOverlap > (aZombie->mZombieType == ZombieType::ZOMBIE_BALLOON ? 20 : 0))
             {
-                // 蹦极僵尸或已死亡的僵尸不能主动触发小推车
+                // Bungee zombies or dead zombies cannot actively trigger the cart
                 if (mMowerState != LawnMowerState::MOWER_READY || (aZombie->mZombieType != ZombieType::ZOMBIE_BUNGEE && aZombie->mHasHead))
                 {
                     MowZombie(aZombie);

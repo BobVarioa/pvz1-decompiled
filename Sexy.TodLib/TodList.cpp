@@ -42,13 +42,13 @@ void TodAllocator::Grow()
 
 bool TodAllocator::IsPointerFromAllocator(void* theItem)
 {
-	size_t aBlockSize = mGrowCount * mItemSize;  // 每次“Grow”的内存大小，即每个区块的内存大小
+	size_t aBlockSize = mGrowCount * mItemSize;  // The memory size of each "Grow", that is, the memory size of each block
 	for (void* aPtr = mBlockList; aPtr != nullptr; aPtr = *(void**)aPtr)
 	{
 		uint aItemPtr = (uint)theItem;
-		// 区块的首个四字节为额外申请的、用于存储指向下一区块的指针的区域
+		// The first four bytes of the block are an additional area allocated to store the pointer to the next block.
 		uint aBlockPtr = (uint)aPtr + sizeof(void*);
-		// 判断 theItem 是否位于当前区块内且指向某一项的区域的起始地址
+		// Determine whether theItem is located in the current block and points to the starting address of the area of ​​an item
 		if (aItemPtr >= aBlockPtr && aItemPtr < aBlockPtr + aBlockSize && (aItemPtr - aBlockPtr) % mItemSize == 0)
 			return true;
 	}
@@ -86,8 +86,8 @@ void TodAllocator::Free(void* theItem, int theItemSize)
 	mTotalItems--;
 	TOD_ASSERT(IsPointerFromAllocator(theItem));
 	TOD_ASSERT(!IsPointerOnFreeList(theItem));
-	*(void**)theItem = mFreeList;  // 将原可用区域头存入 [*theItem] 中
-	mFreeList = theItem;  // 将 theItem 设为新的可用区域头
+	*(void**)theItem = mFreeList;  // Store the original available area header in [*theItem]
+	mFreeList = theItem;  // Set theItem as the new available area header
 }
 
 void TodAllocator::FreeAll()

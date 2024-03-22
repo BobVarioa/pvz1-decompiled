@@ -111,11 +111,11 @@ void ImitaterDialog::ShowToolTip()
 	{
 		RemoveToolTip();
 		uint aRecFlags = mApp->mSeedChooserScreen->SeedNotRecommendedToPick(aSeedType);
-		if (mApp->mSeedChooserScreen->SeedNotAllowedToPick(aSeedType))  // 如果不能携带
+		if (mApp->mSeedChooserScreen->SeedNotAllowedToPick(aSeedType))  // If you can't carry it
 		{
 			mToolTip->SetWarningText(_S("[NOT_ALLOWED_ON_THIS_LEVEL]"));
 		}
-		else if (aRecFlags)  // 如果不推荐携带
+		else if (aRecFlags)  // If it is not recommended to carry
 		{
 			if (TestBit(aRecFlags, NotRecommend::NOT_RECOMMENDED_NOCTURNAL))
 			{

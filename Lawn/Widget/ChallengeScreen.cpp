@@ -387,7 +387,7 @@ void ChallengeScreen::DrawButton(Graphics* g, int theChallengeIndex)
 		if (AccomplishmentsNeeded(theChallengeIndex) <= 1)
 		{
 			// ============================================================================================
-			// ▲ 绘制按钮上的小游戏图标
+			// ▲ Draw mini game icons on buttons
 			// ============================================================================================
 			if (aChallengeButton->mDisabled)
 			{
@@ -418,14 +418,14 @@ void ChallengeScreen::DrawButton(Graphics* g, int theChallengeIndex)
 			}
 
 			// ============================================================================================
-			// ▲ 绘制小游戏按钮边框
+			// ▲ Draw mini-game button borders
 			// ============================================================================================
 			bool aHighLight = aChallengeButton->mIsOver && theChallengeIndex != mUnlockChallengeIndex;
 			g->SetColorizeImages(false);
 			g->DrawImage(aHighLight ? Sexy::IMAGE_CHALLENGE_WINDOW : Sexy::IMAGE_CHALLENGE_WINDOW_HIGHLIGHT, aPosX - 6, aPosY - 2);
 
 			// ============================================================================================
-			// ▲ 绘制小游戏的名称
+			// ▲ Draw the name of the mini-game
 			// ============================================================================================
 			Color aTextColor = aHighLight ? Color(250, 40, 40) : Color(42, 42, 90);
 			SexyString aName = TodStringTranslate(aDef.mChallengeName);
@@ -441,7 +441,7 @@ void ChallengeScreen::DrawButton(Graphics* g, int theChallengeIndex)
 			}
 			else
 			{
-				// 先尝试在名称字符串的后半段取空格以将字符串分隔为两行，若后半段中无空格则在整个字符串中寻找空格
+				// First try to take a space in the second half of the name string to separate the string into two lines. If there is no space in the second half, look for spaces in the entire string.
 				int aHalfPos = (mPageIndex == CHALLENGE_PAGE_SURVIVAL && !aChallengeButton->mDisabled) ? 7 : (aNameLen / 2 - 1);
 				const SexyChar* aSpacedChar = _S(aName.c_str() + aHalfPos, _S(' '));
 				while(aSpacedChar[0]!=' ')
@@ -464,7 +464,7 @@ void ChallengeScreen::DrawButton(Graphics* g, int theChallengeIndex)
 					aSpacedChar = _S(aName.c_str(), _S(' '));
 				}
 
-				// 分别计算取得两行文本的长度
+				// Calculate and obtain the length of two lines of text respectively
 				int aLine1Len = aNameLen;
 				int aLine2Len = 0;
 				if (aSpacedChar != nullptr)
@@ -473,7 +473,7 @@ void ChallengeScreen::DrawButton(Graphics* g, int theChallengeIndex)
 					aLine2Len = aNameLen - aLine1Len - 1;
 				}
 				
-				// 分别绘制两行文本字符串
+				// Draw two lines of text strings separately
 				auto topStr=aName.substr(0, aLine1Len+1);
 				auto botStr=aName.substr(aLine1Len + 1, aLine2Len);
 				if(botStr.empty())
@@ -492,7 +492,7 @@ void ChallengeScreen::DrawButton(Graphics* g, int theChallengeIndex)
 			}
 
 			// ============================================================================================
-			// ▲ 绘制关卡锁定或关卡完成的贴图以及关卡最高记录的文本等
+			// ▲ Draw level lock or level completed stickers and level record text, etc.
 			// ============================================================================================
 			int aRecord = mApp->mPlayerInfo->mChallengeRecords[theChallengeIndex];
 			if (theChallengeIndex == mUnlockChallengeIndex)

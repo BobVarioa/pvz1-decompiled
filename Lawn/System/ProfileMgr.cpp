@@ -129,21 +129,21 @@ bool ProfileMgr::RenameProfile(const SexyString& theOldName, const SexyString& t
         return false;
     else
     {
-        // 判断修改前后的用户名是否一致，一致则直接在原存档中进行修改，否则需要额外操作
+        // Determine whether the user names before and after modification are consistent. If they are consistent, modify them directly in the original archive. Otherwise, additional operations are required.
         if (_stricmp(theOldName.c_str(), theNewName.c_str()) == 0)
             anOldItr->second.mName = theNewName;
         else
         {
-            // 向 mProfileMap 中插入一个由新用户名及旧存档组成的对组
+            // Insert a pair consisting of new username and old profile into mProfileMap
             auto aRet = mProfileMap.emplace(theNewName, anOldItr->second);  // auto aRet = mProfileMap.insert({theNewName, anOldItr->second});
-            // 通过返回值检测新用户名是否与原有存档重复，重复则返回 false，插入成功则继续操作
+            // Use the return value to check whether the new username is the same as the original archive. If it is repeated, false will be returned. If the insertion is successful, continue the operation.
             if (!aRet.second)
                 return false;
             else
             {
-                // 删除 mProfileMap 中原用户名及旧存档的键值对
+                // Delete the key-value pairs of the original username and old archive in mProfileMap
                 mProfileMap.erase(anOldItr);
-                // 修改新插入的键值对中存档的用户名
+                // Modify the username archived in the newly inserted key-value pair
                 aRet.first->second.mName = theNewName;
             }
         }
@@ -157,12 +157,12 @@ void ProfileMgr::DeleteOldestProfile()
     if (mProfileMap.size() == 0)
         return;
 
-    //将 mUseSeq 最小的存档的所在位置记录在 anOldest 迭代器中
+    // Record the location of the smallest archive of mUseSeq in the anOldest iterator
     auto anOldest = mProfileMap.begin();
     for (auto anItr = anOldest; anItr != mProfileMap.end(); anItr++)
         if (anItr->second.mUseSeq < anOldest->second.mUseSeq)
             anOldest = anItr;
-    //删除记录的 mUseSeq 最小的存档
+    // mUseSeq minimal archive of deleted records
     DeleteProfile(anOldest);
 }
 

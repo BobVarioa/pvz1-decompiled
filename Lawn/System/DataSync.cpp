@@ -533,14 +533,14 @@ void DataWriter::EnsureCapacity(unsigned long theNumBytes)
 {
 	if (mCapacity < theNumBytes)
 	{
-		// 每次将容量乘 2 直到容量达到 theNumBytes 或更多
+		// Multiply the capacity by 2 each time until the capacity reaches theNumBytes or more
 		do { mCapacity <<= 1; } while (mCapacity < theNumBytes);
 
-		// 申请新内存
+		// Apply for new memory
 		char* aData = new char[mCapacity];
-		// 将原数据迁移至新内存区域中
+		// Migrate original data to new memory area
 		memcpy(aData, mData, mDataLen);
-		// 释放旧有内存区域
+		// Release old memory area
 		delete[] mData;
 		mData = aData;
 	}

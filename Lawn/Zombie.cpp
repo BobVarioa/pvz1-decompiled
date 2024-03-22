@@ -428,7 +428,7 @@ void Zombie::ZombieInitialize(int theRow, ZombieType theType, bool theVariant, Z
         mAnimTicksPerFrame = 6;
 
         int aDistance = 450 + Rand(300);
-        if (Rand(20) == 0)  // 早爆的概率
+        if (Rand(20) == 0)  //Probability of early explosion
         {
             aDistance /= 3;
         }
@@ -1024,7 +1024,7 @@ void Zombie::PickBungeeZombieTarget(int theColumn)
 
     for (int x = 0; x < MAX_GRID_SIZE_X; x++)
     {
-        if (theColumn == -1 || theColumn == x)  // 限制仅能在 theColumn 列寻找目标，除非 theColumn 为 -1
+        if (theColumn == -1 || theColumn == x)  // Limit the search target to theColumn column only, unless theColumn is -1
         {
             for (int y = 0; y < MAX_GRID_SIZE_Y; y++)
             {
@@ -1191,7 +1191,7 @@ void Zombie::BungeeLiftTarget()
     {
         if (aZombie->mZombieType == ZombieType::ZOMBIE_BUNGEE && aZombie != this && aZombie->mTargetPlantID == mTargetPlantID)
         {
-            aZombie->mTargetPlantID = PlantID::PLANTID_NULL;  // 修复类似于 IZ 蹦极刷阳光的 Bug
+            aZombie->mTargetPlantID = PlantID::PLANTID_NULL;  //Fix bug similar to IZ bungee brushing sunlight
         }
     }
 #endif
@@ -1248,7 +1248,7 @@ void Zombie::BungeeLanding()
 
     mAltitude = 0.0f;
     Zombie* aZombie = mBoard->ZombieTryToGet(mRelatedZombieID);
-    if (aZombie)  // 存在关联的僵尸时，释放空投的僵尸
+    if (aZombie)  // When there are associated zombies, release the airdropped zombies
     {
         aZombie->mZombieHeight = ZombieHeight::HEIGHT_ZOMBIE_NORMAL;
         aZombie->StartWalkAnim(0);
@@ -1257,7 +1257,7 @@ void Zombie::BungeeLanding()
         mZombiePhase = ZombiePhase::PHASE_BUNGEE_RISING;
         PlayZombieReanim("anim_raise", ReanimLoopType::REANIM_PLAY_ONCE_AND_HOLD, 0, 36.0f);
     }
-    else  // 不存在关联的僵尸时，开始偷取植物
+    else  // When there are no associated zombies, start stealing plants
     {
         mZombiePhase = ZombiePhase::PHASE_BUNGEE_AT_BOTTOM;
         mPhaseCounter = 300;
@@ -1278,7 +1278,7 @@ void Zombie::UpdateZombieBungee()
         mAltitude -= 8.0f;
         if (mAltitude <= BUNGEE_ZOMBIE_HEIGHT - 404.0f && aOldAltitude > BUNGEE_ZOMBIE_HEIGHT - 404.0f && mRelatedZombieID == ZombieID::ZOMBIEID_NULL)
         {
-            mApp->PlayFoley(FoleyType::FOLEY_GRASSSTEP);  // 靶子扎地的音效
+            mApp->PlayFoley(FoleyType::FOLEY_GRASSSTEP);  // The sound effect of the target hitting the ground
         }
 
         BungeeLanding();
@@ -1445,7 +1445,7 @@ void Zombie::UpdateZombiePogo()
     if (mZombiePhase == ZombiePhase::PHASE_POGO_HIGH_BOUNCE_1)
     {
         mZombiePhase = ZombiePhase::PHASE_POGO_FORWARD_BOUNCE_2;
-        mVelX = (mX - aPlant->mX + 60) / (float)POGO_BOUNCE_TIME;  // 速度 = 跳跃距离 / 跳跃时间
+        mVelX = (mX - aPlant->mX + 60) / (float)POGO_BOUNCE_TIME;  // Speed ​​= jump distance / jump time
         mPhaseCounter = POGO_BOUNCE_TIME;
     }
     else
@@ -2032,7 +2032,7 @@ void Zombie::UpdateZombieGargantuar()
         if (aBodyReanim->ShouldTriggerTimedEvent(0.64f))
         {
 #ifdef DO_FIX_BUGS
-            if (mMindControlled)  // 魅惑巨人砸僵尸
+            if (mMindControlled)  //Charming giant smashes zombies
             {
                 Zombie* aZombie = FindZombieTarget();
                 if (aZombie)
@@ -2301,7 +2301,7 @@ void Zombie::UpdateZombiePeaHead()
         float aOriginX = mPosX + aTransform.mTransX - 9.0f;
         float aOriginY = mPosY + aTransform.mTransY + 6.0f - mAltitude;
 #ifdef DO_FIX_BUGS
-        if (mMindControlled)  // 魅惑修复
+        if (mMindControlled)  // charm repair
         {
             aOriginX += 90.0f * mScaleZombie;
             Projectile* aProjectile = mBoard->AddProjectile(aOriginX, aOriginY, mRenderOrder, mRow, ProjectileType::PROJECTILE_PEA);
@@ -2321,7 +2321,7 @@ void Zombie::UpdateZombiePeaHead()
     }
 }
 
-void Zombie::BurnRow(int theRow)  // 此函数专用于在定义了 DO_FIX_BUGS 时修复火爆辣椒僵尸的 Bug
+void Zombie::BurnRow(int theRow)  // This function is specially used to fix the bug of hot pepper zombie when DO_FIX_BUGS is defined.
 {
     Zombie* aZombie = nullptr;
     while (mBoard->IterateZombies(aZombie))
@@ -2420,7 +2420,7 @@ void Zombie::UpdateZombieGatlingHead()
         float aOriginX = mPosX + aTransform.mTransX - 9.0f;
         float aOriginY = mPosY + aTransform.mTransY + 6.0f;
 #ifdef DO_FIX_BUGS
-        if (mMindControlled)  // 魅惑修复
+        if (mMindControlled)  // charm repair
         {
             aOriginX += 90.0f * mScaleZombie;
             Projectile* aProjectile = mBoard->AddProjectile(aOriginX, aOriginY, mRenderOrder, mRow, ProjectileType::PROJECTILE_PEA);
@@ -2525,9 +2525,9 @@ void Zombie::UpdateZombieSquashHead()
         if (mPhaseCounter == 2)
         {
 #ifdef DO_FIX_BUGS
-            if (mMindControlled)  // 魅惑修复
+            if (mMindControlled)  // charm repair
             {
-                Rect aAttackRect(aDestX - 73, mPosY + 4, 65, 90);  // 具体数值未实测，待定
+                Rect aAttackRect(aDestX - 73, mPosY + 4, 65, 90);  // The specific value has not been measured and is to be determined.
 
                 Zombie* aZombie = nullptr;
                 while (mBoard->IterateZombies(aZombie))
@@ -4924,7 +4924,7 @@ void Zombie::Animate()
 //0x52BE80
 void Zombie::DrawZombie(Graphics* g, const ZombieDrawPosition& theDrawPos)
 {
-    // 此函数仅 0.1.1 内测版有效，0.9.9 内测版及正式版中正常不会调用
+    // This function is only valid in the 0.1.1 beta version, and will not be called normally in the 0.9.9 beta version and the official version.
 
     switch (mZombieType)
     {
@@ -5009,7 +5009,7 @@ bool Zombie::IsWalkingBackwards()
 //0x52BF60
 void Zombie::DrawZombiePart(Graphics* g, Image* theImage, int theFrame, int theRow, const ZombieDrawPosition& theDrawPos)
 {
-    // 此函数仅 0.1.1 内测版有效，0.9.9 内测版及正式版中正常不会调用
+    // This function is only valid in the 0.1.1 beta version, and will not be called normally in the 0.9.9 beta version and the official version.
 
     int aCelWidth = theImage->GetCelWidth();
     int aCelHeight = theImage->GetCelHeight();
@@ -5114,7 +5114,7 @@ void Zombie::DrawZombiePart(Graphics* g, Image* theImage, int theFrame, int theR
 
 void Zombie::DrawZombieHead(Graphics* g, const ZombieDrawPosition& theDrawPos, int theFrame)
 {
-    // 此函数仅 0.1.1 内测版有效，0.9.9 内测版及正式版中正常不会调用
+    // This function is only valid in the 0.1.1 beta version, and will not be called normally in the 0.9.9 beta version and the official version.
 
     /*
     if (mYuckyFace)
@@ -5151,7 +5151,7 @@ void Zombie::DrawZombieHead(Graphics* g, const ZombieDrawPosition& theDrawPos, i
 
 void Zombie::DrawZombieWithParts(Graphics* g, const ZombieDrawPosition& theDrawPos)
 {
-    // 此函数仅 0.1.1 内测版有效，0.9.9 内测版及正式版中正常不会调用
+    // This function is only valid in the 0.1.1 beta version, and will not be called normally in the 0.9.9 beta version and the official version.
 
     /*
     int aFrame = mIsEating ? 0 : mFrame;
@@ -5320,7 +5320,7 @@ void Zombie::DrawBobsledReanim(Graphics* g, const ZombieDrawPosition& theDrawPos
 
     if (mFromWave == Zombie::ZOMBIE_WAVE_CUTSCENE)
     {
-        if (theBeforeZombie)  // 选卡界面中，依次绘制雪橇背面、僵尸本体和雪橇正面
+        if (theBeforeZombie)  // In the card selection interface, draw the back of the sled, the zombie body and the front of the sled in sequence
         {
             aDrawBack = true;
         }
@@ -5331,7 +5331,7 @@ void Zombie::DrawBobsledReanim(Graphics* g, const ZombieDrawPosition& theDrawPos
     }
     else if (mZombiePhase == ZombiePhase::PHASE_BOBSLED_CRASHING)
     {
-        if (aPosition == 0 && !theBeforeZombie)  // 雪橇损坏后，在绘制领头僵尸结束后绘制雪橇背面和雪橇正面
+        if (aPosition == 0 && !theBeforeZombie)  // After the sled is damaged, draw the back of the sled and the front of the sled after drawing the lead zombie.
         {
             aDrawFront = true;
             aDrawBack = true;
@@ -5339,7 +5339,7 @@ void Zombie::DrawBobsledReanim(Graphics* g, const ZombieDrawPosition& theDrawPos
     }
     else if (mZombiePhase == ZombiePhase::PHASE_BOBSLED_SLIDING || mZombiePhase == ZombiePhase::PHASE_ZOMBIE_BURNED)
     {
-        if (aPosition == 2 && theBeforeZombie)  // 推行雪橇时或雪橇化为灰烬后，在绘制第 2 只僵尸之前绘制雪橇背面和雪橇正面
+        if (aPosition == 2 && theBeforeZombie)  // When pushing the sled or after it is reduced to ashes, draw the back of the sled and the front of the sled before drawing the second zombie
         {
             aDrawFront = true;
             aDrawBack = true;
@@ -5348,7 +5348,7 @@ void Zombie::DrawBobsledReanim(Graphics* g, const ZombieDrawPosition& theDrawPos
     else if (mZombiePhase == ZombiePhase::PHASE_BOBSLED_BOARDING)
     {
         Reanimation* aBodyReanim = mApp->ReanimationGet(mBodyReanimID);
-        if (aBodyReanim->mAnimTime < 0.5f)  // 起跳在空中时，绘制第 2 只僵尸之前绘制雪橇背面和雪橇正面
+        if (aBodyReanim->mAnimTime < 0.5f)  // When jumping in the air, draw the back of the sled and the front of the sled before drawing the second zombie
         {
             if (aPosition == 2 && theBeforeZombie)
             {
@@ -5356,11 +5356,11 @@ void Zombie::DrawBobsledReanim(Graphics* g, const ZombieDrawPosition& theDrawPos
                 aDrawBack = true;
             }
         }
-        else if (aPosition == 0 && !theBeforeZombie)  // 进入雪橇后，绘制领头僵尸之后绘制雪橇正面
+        else if (aPosition == 0 && !theBeforeZombie)  // After entering the sled, draw the lead zombie and then draw the front of the sled
         {
             aDrawFront = true;
         }
-        else if (aPosition == 3 && theBeforeZombie)  // 进入雪橇后，绘制末尾僵尸之前绘制雪橇背面
+        else if (aPosition == 3 && theBeforeZombie)  // After entering the sled, draw the back of the sled before drawing the zombie at the end
         {
             aDrawBack = true;
         }
@@ -5373,8 +5373,8 @@ void Zombie::DrawBobsledReanim(Graphics* g, const ZombieDrawPosition& theDrawPos
     {
         aBobsledDamageStatus = 3;
         int aAlpha = TodAnimateCurve(30, 0, mPhaseCounter, 255, 0, TodCurves::CURVE_LINEAR);
-        aOffsetX += (BOBSLED_CRASH_TIME - mPhaseCounter) * mVelX / ZOMBIE_LIMP_SPEED_FACTOR;  // 还原至雪橇损坏时的位置
-        aOffsetX -= TodAnimateCurveFloat(BOBSLED_CRASH_TIME, 0, mPhaseCounter, 0.0f, 50.0f, TodCurves::CURVE_EASE_OUT);  // 计算雪橇惯性产生的横向位移
+        aOffsetX += (BOBSLED_CRASH_TIME - mPhaseCounter) * mVelX / ZOMBIE_LIMP_SPEED_FACTOR;  //Restore to the position when the sled was damaged
+        aOffsetX -= TodAnimateCurveFloat(BOBSLED_CRASH_TIME, 0, mPhaseCounter, 0.0f, 50.0f, TodCurves::CURVE_EASE_OUT);  // Calculate the lateral displacement caused by the inertia of the sled
         aOffsetY += TodAnimateCurveFloat(BOBSLED_CRASH_TIME, 75, mPhaseCounter, 5.0f, 10.0f, TodCurves::CURVE_LINEAR);
         if (aAlpha != 255)
         {
@@ -5936,18 +5936,18 @@ void Zombie::GetDrawPos(ZombieDrawPosition& theDrawPos)
         {
             Reanimation* aBodyReanim = mApp->ReanimationGet(mBodyReanimID);
 
-            if (aBodyReanim->mAnimTime >= 0.56f && aBodyReanim->mAnimTime <= 0.65f)  // 跳上海豚的起跳过程
+            if (aBodyReanim->mAnimTime >= 0.56f && aBodyReanim->mAnimTime <= 0.65f)  //The process of jumping on a dolphin
             {
                 theDrawPos.mClipHeight = 0.0f;
             }
-            else if (aBodyReanim->mAnimTime >= 0.75f)  // 跳上海豚的下落过程
+            else if (aBodyReanim->mAnimTime >= 0.75f)  //The descent process of jumping on a dolphin
             {
                 theDrawPos.mClipHeight = -mAltitude - 10.0f;
             }
         }
         else if (mZombiePhase == ZombiePhase::PHASE_DOLPHIN_RIDING)
         {
-            theDrawPos.mImageOffsetX += 70.0f;  // 额外 70 像素的横坐标偏移用于弥补跳上海豚后的 mPosX -= 70.0f
+            theDrawPos.mImageOffsetX += 70.0f;  // Extra 70 pixels of abscissa offset to compensate for mPosX -= 70.0f after jumping on the dolphin
 
             if (mZombieHeight == ZombieHeight::HEIGHT_DRAGGED_UNDER)
             {
@@ -5963,18 +5963,18 @@ void Zombie::GetDrawPos(ZombieDrawPosition& theDrawPos)
             theDrawPos.mImageOffsetX += 70.0f + mAltitude;
 
             Reanimation* aBodyReanim = mApp->ReanimationGet(mBodyReanimID);
-            if (aBodyReanim->mAnimTime <= 0.06f)  // 起跳出水之前
+            if (aBodyReanim->mAnimTime <= 0.06f)  // Before jumping out of the water
             {
                 theDrawPos.mClipHeight = -mAltitude - 10.0f;
             }
-            else if (aBodyReanim->mAnimTime >= 0.5f && aBodyReanim->mAnimTime <= 0.76f) // 起跳过程中（脱离水面后至重新入水前）
+            else if (aBodyReanim->mAnimTime >= 0.5f && aBodyReanim->mAnimTime <= 0.76f) // During the take-off process (from leaving the water to before re-entering the water)
             {
                 theDrawPos.mClipHeight = -13.0f;
             }
         }
         else if (mZombiePhase == ZombiePhase::PHASE_DOLPHIN_WALKING_IN_POOL || mZombiePhase == ZombiePhase::PHASE_ZOMBIE_DYING)
         {
-            theDrawPos.mImageOffsetY += 50.0f;  // 额外 50 像素的横坐标偏移用于弥补跳跃过程中前进的距离
+            theDrawPos.mImageOffsetY += 50.0f;  //An additional 50 pixels of abscissa offset is used to compensate for the distance traveled during the jump
 
             if (mZombiePhase == ZombiePhase::PHASE_ZOMBIE_DYING)
             {
@@ -6002,7 +6002,7 @@ void Zombie::GetDrawPos(ZombieDrawPosition& theDrawPos)
         if (mZombiePhase == ZombiePhase::PHASE_SNORKEL_INTO_POOL)
         {
             Reanimation* aBodyReanim = mApp->ReanimationGet(mBodyReanimID);
-            if (aBodyReanim->mAnimTime >= 0.8f)  // 入水后
+            if (aBodyReanim->mAnimTime >= 0.8f)  //After entering the water
             {
                 theDrawPos.mClipHeight = -10.0f;
             }
@@ -6083,7 +6083,7 @@ int Zombie::GetDancerFrame()
 #ifdef DO_FIX_BUGS
     if (mBoard)
     {
-        return (mBoard->mMainCounter % (aFrameLength * aFramesCount)) / aFrameLength;  // 修复“女仆秘籍”
+        return (mBoard->mMainCounter % (aFrameLength * aFramesCount)) / aFrameLength;  // Fix "Maid Secrets"
     }
     else
     {
@@ -6275,7 +6275,7 @@ bool Zombie::CanTargetPlant(Plant* thePlant, ZombieAttackType theAttackType)
             mZombieType == ZombieType::ZOMBIE_REDEYE_GARGANTUAR || 
             mZombieType == ZombieType::ZOMBIE_ZAMBONI || 
             mBoard->IsPoolSquare(thePlant->mPlantCol, thePlant->mRow) || 
-            mBoard->GetFlowerPotAt(thePlant->mPlantCol, thePlant->mRow);  // 扶梯僵尸给花盆上的地刺/地刺王搭梯的原理
+            mBoard->GetFlowerPotAt(thePlant->mPlantCol, thePlant->mRow);  // The principle of how the escalator zombies give the ground thorns on the flower pots/the ground thorn king an escalator
     }
 
     if (theAttackType == ZombieAttackType::ATTACKTYPE_DRIVE_OVER)
@@ -6963,7 +6963,7 @@ void Zombie::EatPlant(Plant* thePlant)
     if (mYuckyFace)
         return;
 
-    if (mBoard->GetLadderAt(thePlant->mPlantCol, thePlant->mRow) && mZombieType != ZombieType::ZOMBIE_DIGGER)  // 矿工僵尸无视梯子
+    if (mBoard->GetLadderAt(thePlant->mPlantCol, thePlant->mRow) && mZombieType != ZombieType::ZOMBIE_DIGGER)  // Miner zombies ignore ladders
     {
         StopEating();
 
@@ -7019,7 +7019,7 @@ void Zombie::EatPlant(Plant* thePlant)
     {
         int aStageBeforeChew = thePlant->mPlantHealth / 40;
         int aStageAfterChew = (thePlant->mPlantHealth - DAMAGE_PER_EAT) / 40;
-        if (aStageAfterChew < aStageBeforeChew || thePlant->mPlantHealth - DAMAGE_PER_EAT <= 0)  // 若本次啃食令植物血量下降了至少 1 个阶段
+        if (aStageAfterChew < aStageBeforeChew || thePlant->mPlantHealth - DAMAGE_PER_EAT <= 0)  // If this eating reduces the plant's health by at least 1 stage
         {
             mBoard->AddCoin(thePlant->mX, thePlant->mY, CoinType::COIN_SUN, CoinMotion::COIN_MOTION_FROM_PLANT);
         }
@@ -7336,7 +7336,7 @@ void Zombie::BungeeDie()
 {
     BungeeDropPlant();
 
-    if (mBoard)  // 原版没有这个判断，因为 mBoard 为空时 DataArrayTryToGet() 不会实际用到 mBoard，此处为了确保安全就加上了这个判断
+    if (mBoard)  // The original version does not have this judgment, because DataArrayTryToGet() will not actually use mBoard when mBoard is empty. This judgment is added here to ensure safety.
     {
         Plant* aPlant = mBoard->mPlants.DataArrayTryToGet((unsigned int)mTargetPlantID);
         if (aPlant)
@@ -8053,12 +8053,12 @@ bool Zombie::EffectedByDamage(unsigned int theDamageRangeFlags)
 
     if (mZombieType == ZombieType::ZOMBIE_BUNGEE && mZombiePhase != ZombiePhase::PHASE_BUNGEE_AT_BOTTOM && mZombiePhase != ZombiePhase::PHASE_BUNGEE_GRABBING)
     {
-        return false;  // 蹦极僵尸只有在停留时才会受到攻击
+        return false;  // Bungee zombies will only be attacked when they stay
     }
 
     if (mZombieHeight == ZombieHeight::HEIGHT_GETTING_BUNGEE_DROPPED)
     {
-        return false;  // 被空投的过程中不会受到攻击
+        return false;  // You will not be attacked during the airdrop process
     }
 
     if (mZombieType == ZombieType::ZOMBIE_BOSS)
@@ -8077,13 +8077,13 @@ bool Zombie::EffectedByDamage(unsigned int theDamageRangeFlags)
             mZombiePhase != ZombiePhase::PHASE_BOSS_HEAD_IDLE_AFTER_SPIT && 
             mZombiePhase != ZombiePhase::PHASE_BOSS_HEAD_SPIT)
         {
-            return false;  // 僵王博士只有在低头状态下才会受到攻击
+            return false;  // Dr. Zombie will only be attacked when he lowers his head.
         }
     }
 
     if (mZombieType == ZombieType::ZOMBIE_BOBSLED && GetBobsledPosition() > 0)
     {
-        return false;  // 存在雪橇时，只有领头僵尸会受到攻击
+        return false;  // When there is a sled, only the lead zombie will be attacked
     }
 
     if (mZombiePhase == ZombiePhase::PHASE_POLEVAULTER_IN_VAULT || 
@@ -8104,7 +8104,7 @@ bool Zombie::EffectedByDamage(unsigned int theDamageRangeFlags)
 
     if (mZombieType != ZombieType::ZOMBIE_BOBSLED && GetZombieRect().mX > WIDE_BOARD_WIDTH)
     {
-        return false;  // 除雪橇僵尸小队外，场外的僵尸不会受到攻击
+        return false;  // Except for the sled zombie team, zombies outside the field will not be attacked
     }
 
     bool submerged = mZombieType == ZombieType::ZOMBIE_SNORKEL && mInPool && !mIsEating;
@@ -8820,7 +8820,7 @@ void Zombie::DetachShield()
         else if (mShieldType == ShieldType::SHIELDTYPE_LADDER)
         {
 #ifdef DO_FIX_BUGS
-            if (mHasArm)  // 修复扶梯僵尸搭梯后断臂重生的 Bug
+            if (mHasArm)  //Fix the bug where zombies on escalators regenerate after breaking their arms after taking the stairs
             {
                 ReanimShowPrefix("Zombie_outerarm", RENDER_GROUP_NORMAL);
             }
@@ -9736,7 +9736,7 @@ void Zombie::BossRVAttack()
     RemoveColdEffects();
     mZombiePhase = ZombiePhase::PHASE_BOSS_DROP_RV;
 #ifdef DO_FIX_BUGS
-    mTargetRow = RandRangeInt(0, mBoard->StageHas6Rows() ? 4 : 3);  // 泳池僵王兼容
+    mTargetRow = RandRangeInt(0, mBoard->StageHas6Rows() ? 4 : 3);  // Pool Zombie King compatible
 #else
     mTargetRow = RandRangeInt(0, 3);
 #endif
@@ -9802,7 +9802,7 @@ void Zombie::BossSpawnAttack()
     case 3:     aTrackName = "anim_spawn_4";    break;
     case 4:     aTrackName = "anim_spawn_5";    break;
 #ifdef DO_FIX_BUGS
-    default:    aTrackName = "anim_spawn_5";    break;  // 泳池场景放僵尸崩溃的一种妥协的修复方式（不修改动画时）
+    default:    aTrackName = "anim_spawn_5";    break;  // A compromise fix for the zombie crash in the swimming pool scene (without modifying the animation)
 #else
     default:    TOD_ASSERT();                   break;
 #endif
@@ -9995,7 +9995,7 @@ void Zombie::BossHeadSpit()
 
     mZombiePhase = ZombiePhase::PHASE_BOSS_HEAD_SPIT;
 #ifdef DO_FIX_BUGS
-    mFireballRow = RandRangeInt(0, mBoard->StageHas6Rows() ? 5 : 4);  // 泳池僵王兼容
+    mFireballRow = RandRangeInt(0, mBoard->StageHas6Rows() ? 5 : 4);  // Pool Zombie King compatible
 #else
     mFireballRow = RandRangeInt(0, 4);
 #endif
@@ -10010,7 +10010,7 @@ void Zombie::BossHeadSpit()
     case 3:     aTrackName = "anim_head_attack_4";      break;
     case 4:     aTrackName = "anim_head_attack_5";      break;
 #ifdef DO_FIX_BUGS
-    default:    aTrackName = "anim_head_attack_5";      break;  // 泳池场景吐球的一种妥协的修复方式（不修改动画时）
+    default:    aTrackName = "anim_head_attack_5";      break;  // A compromised way to fix the ball spitting in the swimming pool scene (without modifying the animation)
 #else
     default:    TOD_ASSERT();                           break;
 #endif
@@ -10036,7 +10036,7 @@ void Zombie::BossHeadSpit()
 //0x535630
 void Zombie::BossDestroyIceballInRow(int theRow)
 {
-    //if (theRow != mFireballRow)  // 此判断在原版中被移动至调用处进行，故参数的 theRow 亦被删去
+    //if (theRow != mFireballRow)  // This judgment was moved to the calling location in the original version, so theRow of the parameter was also deleted.
     //    return;
 
     Reanimation* aFireBallReanim = mApp->ReanimationTryToGet(mBossFireBallReanimID);
@@ -10282,11 +10282,11 @@ void Zombie::UpdateBoss()
         if (aDamageIndex != mBossMode)
         {
             mBossMode = aDamageIndex;
-            if (mBossMode == 1)  // 进入一级损伤后，立即释放一次蹦极僵尸
+            if (mBossMode == 1)  // After entering the first level of damage, immediately release a bungee zombie
             {
                 BossBungeeAttack();
             }
-            else  // 进入二级损伤后，立即进行一次砸车
+            else  // After entering the second level damage, immediately perform a car smash
             {
                 BossRVAttack();
             }

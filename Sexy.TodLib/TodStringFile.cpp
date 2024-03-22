@@ -48,9 +48,9 @@ void TodStringListSetColors(TodStringListFormat* theFormats, int theCount)
 bool TodStringListReadName(const char*& thePtr, std::string& theName)
 {
 	const char* aNameStart = strchr(thePtr, '[');
-	if (aNameStart == nullptr)  // 如果文本中不存在“[”
+	if (aNameStart == nullptr)  // If "[" does not exist in the text
 	{
-		if (strspn(thePtr, " \n\r\t") != strlen(thePtr))  // 如果文本不全是空白字符
+		if (strspn(thePtr, " \n\r\t") != strlen(thePtr))  // If the text is not all whitespace characters
 		{
 			TodTrace("Failed to find string name");
 			return false;
@@ -62,21 +62,21 @@ bool TodStringListReadName(const char*& thePtr, std::string& theName)
 	else
 	{
 		const char* aNameEnd = strchr(aNameStart + 1, ']');
-		if (aNameEnd == nullptr)  // 如果“[”后不存在“]”
+		if (aNameEnd == nullptr)  // If there is no "]" after "["
 		{
 			TodTrace("Failed to find ']'");
 			return false;
 		}
 
 		int aCount = aNameEnd - aNameStart - 1;
-		theName = Sexy::Trim(string(aNameStart + 1, aCount));  // 取得中括号之间的部分并去除字符串前后的空白字符
+		theName = Sexy::Trim(string(aNameStart + 1, aCount));  // Get the part between square brackets and remove the whitespace characters before and after the string
 		if (theName.size() == 0)
 		{
 			TodTrace("Name Too Short");
 			return false;
 		}
 
-		thePtr += aCount + 2;  // 移动读取指针至“]”后
+		thePtr += aCount + 2;  //Move the read pointer to after "]"
 		return true;
 	}
 }
@@ -87,7 +87,7 @@ void TodStringRemoveReturnChars(std::string& theString)
 	for (int i = 0; i < theString.size(); )
 	{
 		if (theString[i] == '\r')
-			theString.replace(i, 1, "", 0);  // 原版中此处的“1”和“""”已内联至函数内部
+			theString.replace(i, 1, "", 0);  // The "1" and """ here in the original version have been inlined into the function
 		else
 			i++;
 	}
@@ -98,9 +98,9 @@ bool TodStringListReadValue(const char*& thePtr, std::string& theValue)
 {
 	const char* aValueEnd = strchr(thePtr, '[');
 	int aLen = aValueEnd ? aValueEnd - thePtr : strlen(thePtr);
-	theValue = Sexy::Trim(string(thePtr, aLen));  // 如果存在下一个“[”，则取到“[”前为止；否则，取剩下的全部
-	TodStringRemoveReturnChars(theValue);  // 移除所有的换行符
-	thePtr += aLen;  // 移动读取指针至“[”处（或结尾处）
+	theValue = Sexy::Trim(string(thePtr, aLen));  // If there is the next "[", get until before "["; otherwise, get all the rest
+	TodStringRemoveReturnChars(theValue);  // Remove all newlines
+	thePtr += aLen;  //Move the reading pointer to "[" (or the end)
 	return true;
 }
 
@@ -113,11 +113,11 @@ bool TodStringListReadItems(const char* theFileText)
 
 	for (;;)
 	{
-		if (!TodStringListReadName(aPtr, aName))  // 读取一个标签
+		if (!TodStringListReadName(aPtr, aName))  //Read a tag
 			return false;
-		if (aName.size() == 0)  // 读取成功但没有读取到标签，表明读取完成
+		if (aName.size() == 0)  // The reading is successful but no tag is read, indicating that the reading is completed
 			return true;
-		if (!TodStringListReadValue(aPtr, aValue))  // 读取对应的内容
+		if (!TodStringListReadValue(aPtr, aValue))  //Read the corresponding content
 			return false;
 
 		std::string aNameUpper = Sexy::StringToUpper(aName);
@@ -135,12 +135,12 @@ bool TodStringListReadFile(const char* theFileName)
 		return false;
 	}
 
-	p_fseek(pFile, 0, SEEK_END);  // 指针调整至文件末尾
-	int aSize = p_ftell(pFile);  // 当前位置即为文件长度
-	p_fseek(pFile, 0, SEEK_SET);  // 指针调回文件开头
+	p_fseek(pFile, 0, SEEK_END);  //Adjust the pointer to the end of the file
+	int aSize = p_ftell(pFile);  //The current position is the file length
+	p_fseek(pFile, 0, SEEK_SET);  //The pointer is moved back to the beginning of the file
 	char* aFileText = new char[aSize + 1];
 	bool aSuccess = true;
-	if (p_fread(aFileText, sizeof(char), aSize, pFile) <= 0)  // 按字节读取数据
+	if (p_fread(aFileText, sizeof(char), aSize, pFile) <= 0)  //Read data by bytes
 	{
 		TodTrace("Failed to read '%s'", theFileName);
 		aSuccess = false;
@@ -150,7 +150,7 @@ bool TodStringListReadFile(const char* theFileName)
 	{
 		aSuccess = TodStringListReadItems(aFileText);
 	}
-	p_fclose(pFile);  // 关闭文件流
+	p_fclose(pFile);  // Close the file stream
 	delete[] aFileText;
 
 	return aSuccess;
@@ -183,7 +183,7 @@ SexyString TodStringTranslate(const SexyString& theString)
 {
 	if (theString.size() >= 3 && theString[0] == '[')
 	{
-		SexyString aName = theString.substr(1, theString.size() - 2);  // 取“[”与“]”中间的部分
+		SexyString aName = theString.substr(1, theString.size() - 2);  // Take the part between "[" and "]"
 		return TodStringListFind(aName);
 	}
 	return theString;
@@ -197,7 +197,7 @@ SexyString TodStringTranslate(const SexyChar* theString)
 		int aLen = strlen(theString);
 		if (aLen >= 3 && theString[0] == '[')
 		{
-			SexyString aName(theString, 1, aLen - 2);  // 取“[”与“]”中间的部分
+			SexyString aName(theString, 1, aLen - 2);  // Take the part between "[" and "]"
 			return TodStringListFind(aName);
 		}
 		else
@@ -212,7 +212,7 @@ bool TodStringListExists(const SexyString& theString)
 {
 	if (theString.size() >= 3 && theString[0] == '[')
 	{
-		SexyString aName = theString.substr(1, theString.size() - 2);  // 取“[”与“]”中间的部分
+		SexyString aName = theString.substr(1, theString.size() - 2);  // Take the part between "[" and "]"
 		return gSexyAppBase->mStringProperties.find(aName) != gSexyAppBase->mStringProperties.end();
 	}
 	return false;
@@ -246,10 +246,10 @@ bool CharIsSpaceInFormat(char theChar, const TodStringListFormat& theCurrentForm
 int TodWriteString(Graphics* g, const SexyString& theString, int theX, int theY, TodStringListFormat& theCurrentFormat, int theWidth, DrawStringJustification theJustification, bool drawString, int theOffset, int theLength)
 {
 	Font* aFont = *theCurrentFormat.mNewFont;
-	if (drawString)  // 如果需要实际绘制
+	if (drawString)  // If actual drawing is required
 	{
 		int aSpareX = theWidth - TodWriteString(g, theString, theX, theY, theCurrentFormat, theWidth, DrawStringJustification::DS_ALIGN_LEFT, false, theOffset, theLength);
-		switch (theJustification)  // 根据对齐方式调整实际绘制的横坐标
+		switch (theJustification)  //Adjust the actual drawn abscissa according to the alignment
 		{
 		case DrawStringJustification::DS_ALIGN_RIGHT:
 		case DrawStringJustification::DS_ALIGN_RIGHT_VERTICAL_MIDDLE:
@@ -265,7 +265,7 @@ int TodWriteString(Graphics* g, const SexyString& theString, int theX, int theY,
 	if (theLength < 0 || theOffset + theLength > theString.size())
 		theLength = theString.size();
 	else
-		theLength = theOffset + theLength;  // 将 theLength 更改为子串结束位置
+		theLength = theOffset + theLength;  //Change theLength to the end of the substring
 
 	SexyString aString;
 	int aXOffset = 0;
@@ -276,46 +276,46 @@ int TodWriteString(Graphics* g, const SexyString& theString, int theX, int theY,
 		{
 			const char* aFormatStart = theString.c_str() + i;
 			const char* aFormatEnd = strchr(aFormatStart + 1, '}');
-			if (aFormatEnd != nullptr)  // 如果存在完整的“{FORMAT}”控制字符
+			if (aFormatEnd != nullptr)  // If the complete "{FORMAT}" control character is present
 			{
 				i += aFormatEnd - aFormatStart;  // i 移动至 "}" 处
-				if (drawString)  // 如果需要实际绘制
-					aFont->DrawString(g, theX + aXOffset, theY, aString, theCurrentFormat.mNewColor, g->mClipRect);  // 将已经积攒的字符进行绘制
+				if (drawString)  // If actual drawing is required
+					aFont->DrawString(g, theX + aXOffset, theY, aString, theCurrentFormat.mNewColor, g->mClipRect);  // Draw the accumulated characters
 				
-				aXOffset += aFont->StringWidth(aString);  // 横向偏移值加上绘制的字符串的宽度
-				aString.assign("");  // 清空字符串
-				TodWriteStringSetFormat(aFormatStart + 1, theCurrentFormat);  // 根据当前控制字符调整格式
+				aXOffset += aFont->StringWidth(aString);  //The horizontal offset value plus the width of the drawn string
+				aString.assign("");  // Clear the string
+				TodWriteStringSetFormat(aFormatStart + 1, theCurrentFormat);  //Adjust the format according to the current control character
 				Font* aFont = *theCurrentFormat.mNewFont;
 			}
 		}
 		else
 		{
-			if (TestBit(theCurrentFormat.mFormatFlags, TodStringFormatFlag::TOD_FORMAT_IGNORE_NEWLINES))  // 如果将换行符视作空格
+			if (TestBit(theCurrentFormat.mFormatFlags, TodStringFormatFlag::TOD_FORMAT_IGNORE_NEWLINES))  // If newlines are treated as spaces
 			{
-				if (CharIsSpaceInFormat(theString[i], theCurrentFormat))  // 如果当前字符是空格
+				if (CharIsSpaceInFormat(theString[i], theCurrentFormat))  // If the current character is a space
 				{
-					if (!aPrevCharWasSpace)  // 如果前一个字符不是空格
-						aString.append(1, ' ');  // 积攒一个空格
+					if (!aPrevCharWasSpace)  // If the previous character is not a space
+						aString.append(1, ' ');  // Accumulate a space
 					continue;
 				}
 				else
-					aPrevCharWasSpace = false;  // 确保字符串中至多只能连续出现 1 个空格字符
+					aPrevCharWasSpace = false;  // Ensure that at most 1 consecutive space character appears in the string
 			}
 
 			aString.append(1, theString[i]);
 		}
 	}
 
-	if (drawString)  // 如果需要实际绘制
-		aFont->DrawString(g, theX + aXOffset, theY, aString, theCurrentFormat.mNewColor, g->mClipRect);  // 将已经积攒的字符进行绘制
+	if (drawString)  // If actual drawing is required
+		aFont->DrawString(g, theX + aXOffset, theY, aString, theCurrentFormat.mNewColor, g->mClipRect);  // Draw the accumulated characters
 	return aXOffset + aFont->StringWidth(aString);
 }
 
 int TodWriteWordWrappedHelper(Graphics* g, const SexyString& theString, int theX, int theY, TodStringListFormat& theCurrentFormat, int theWidth, DrawStringJustification theJustification, bool drawString, int theOffset, int theLength, int theMaxChars)
 {
-	if (theOffset + theLength > theMaxChars)  // 如果指定子串超出了字符串的最大长度
+	if (theOffset + theLength > theMaxChars)  // If the specified substring exceeds the maximum length of the string
 	{
-		theLength = theMaxChars - theOffset;  // 修正子串长度
+		theLength = theMaxChars - theOffset;  // Correct substring length
 		if (theLength <= 0)
 			return -1;
 	}
@@ -346,18 +346,18 @@ int TodDrawStringWrappedHelper(Graphics* g, const SexyString& theText, const Rec
 	while (aCurPos < theText.size())
 	{
 		aCurChar = theText[aCurPos];
-		if (aCurChar == '{')  // 如果当前字符是特殊格式控制字符的起始标志（即“{”）
+		if (aCurChar == '{')  // If the current character is the start mark of a special format control character (i.e. "{")
 		{
 			const char* aFmtStart = theText.c_str() + aCurPos;
 			const char* aFormat = aFmtStart + 1;
 			const char* aFmtEnd = strchr(aFormat, '}');
-			if (aFmtEnd != nullptr)  // 如果存在与“{”对应的“}”，即存在完整的控制字符
+			if (aFmtEnd != nullptr)  // If there is "}" corresponding to "{", there is a complete control character
 			{
 				aCurPos += aFmtEnd - aFmtStart + 1;  // aCurPos 移至“}”的下一个字符处
 				int aOldAscentOffset = theFont->GetAscent() - theFont->GetAscentPadding();
-				Color aExistingColor = aCurrentFormat.mNewColor;  // 备份当前格式的颜色
-				TodWriteStringSetFormat(aFormat, aCurrentFormat);  // 根据当前控制字符设置新的格式
-				aCurrentFormat.mNewColor = aExistingColor;  // 还原为原有格式的颜色
+				Color aExistingColor = aCurrentFormat.mNewColor;  // Back up the color of the current format
+				TodWriteStringSetFormat(aFormat, aCurrentFormat);  //Set a new format based on the current control character
+				aCurrentFormat.mNewColor = aExistingColor;  //Restore to original format color
 				int aNewAscentOffset = (*aCurrentFormat.mNewFont)->GetAscent() - (*aCurrentFormat.mNewFont)->GetAscentPadding();
 				aLineSpacing = (*aCurrentFormat.mNewFont)->GetLineSpacing() + aCurrentFormat.mLineSpacingOffset;
 				aYOffset += aNewAscentOffset - aOldAscentOffset;
@@ -376,15 +376,15 @@ int TodDrawStringWrappedHelper(Graphics* g, const SexyString& theText, const Rec
 			aCurPos++;
 		}
 
-		aCurWidth += (*aCurrentFormat.mNewFont)->CharWidthKern(aCurChar, aPrevChar);  // 当前宽度加上当前字符的宽度
+		aCurWidth += (*aCurrentFormat.mNewFont)->CharWidthKern(aCurChar, aPrevChar);  //The current width plus the width of the current character
 		aPrevChar = aCurChar;
-		if (aCurWidth > theRect.mWidth)  // 如果当前宽度超出了限制区域的宽度，则进行换行的处理
+		if (aCurWidth > theRect.mWidth)  // If the current width exceeds the width of the restricted area, wrap the line
 		{
 			int aLineWidth;
-			if (aSpacePos != -1)  // 如果本行前面的字符中存在空格字符
+			if (aSpacePos != -1)  // If there are space characters in the characters before this line
 			{
 				int aCurY = (int)g->mTransY + theRect.mY + aYOffset;
-				if (aCurY >= g->mClipRect.mY && aCurY <= g->mClipRect.mY + g->mClipRect.mHeight + aLineSpacing)  // 确保当前绘制位置纵坐标在裁剪范围内
+				if (aCurY >= g->mClipRect.mY && aCurY <= g->mClipRect.mY + g->mClipRect.mHeight + aLineSpacing)  // Ensure that the ordinate of the current drawing position is within the clipping range
 				{
 					TodWriteWordWrappedHelper(
 						g, 
@@ -395,17 +395,17 @@ int TodDrawStringWrappedHelper(Graphics* g, const SexyString& theText, const Rec
 						theRect.mWidth, 
 						theJustification, 
 						drawString, 
-						aLineFeedPos, // 上次换行的位置即为新行开始的位置
-						aSpacePos - aLineFeedPos, // 绘制部分为从上次换行的位置开始至本行空格字符之前的文本
+						aLineFeedPos, // The position of the last line break is the position where the new line starts
+						aSpacePos - aLineFeedPos, //The drawing part is the text starting from the last line break position to the text before the space character in this line
 						theMaxChars
-					);  // 绘制新一行的文本（若需要）
+					);  // Draw a new line of text (if necessary)
 				}
 
 				aLineWidth = aCurWidth;
-				if (aLineWidth < 0)  // 如果本行字符总宽度小于 0
+				if (aLineWidth < 0)  // If the total character width of this line is less than 0
 					break;
 
-				aCurPos = aSpacePos + 1;  // 将 aCurPos 移至下一行的开始处
+				aCurPos = aSpacePos + 1;  // Move aCurPos to the beginning of the next line
 				if (aCurChar != '\n')
 					while (aCurPos < theText.size() && CharIsSpaceInFormat(theText[aCurPos], aCurrentFormat))
 						aCurPos++;  // aCurPos 跳过所有连续的空白字符
@@ -413,7 +413,7 @@ int TodDrawStringWrappedHelper(Graphics* g, const SexyString& theText, const Rec
 			else
 			{
 				if (aCurPos < aLineFeedPos + 1)
-					aCurPos++;  // 确保每行至少有 1 个字符
+					aCurPos++;  // Make sure each line has at least 1 character
 
 				aLineWidth = TodWriteWordWrappedHelper(
 					g,
@@ -424,25 +424,25 @@ int TodDrawStringWrappedHelper(Graphics* g, const SexyString& theText, const Rec
 					theRect.mWidth, 
 					theJustification, 
 					drawString, 
-					aLineFeedPos, // 上次换行的位置即为新行开始的位置
-					aCurPos - aLineFeedPos, // 绘制部分为从上次换行的位置开始至当前位置的文本
+					aLineFeedPos, // The position of the last line break is the position where the new line starts
+					aCurPos - aLineFeedPos, //The drawing part is the text starting from the last line break position to the current position
 					theMaxChars
-				);  // 绘制新一行的文本（若需要）
-				if (aLineWidth < 0)  // 如果本行字符总宽度小于 0
+				);  // Draw a new line of text (if necessary)
+				if (aLineWidth < 0)  // If the total character width of this line is less than 0
 					break;
 			}
 
 			if (aLineWidth > aMaxWidth)
-				aMaxWidth = aLineWidth;  // 更新最大行宽度
+				aMaxWidth = aLineWidth;  //Update maximum row width
 			aYOffset += aLineSpacing;
-			aLineFeedPos = aCurPos;  // 记录当前位置为“上次换行的位置”
+			aLineFeedPos = aCurPos;  //Record the current position as "the position of the last line break"
 			aSpacePos = -1;
 			aCurWidth = 0;
 			aPrevChar = '\0';
 		}
-		else  // 当前宽度未超过限制区域宽度时
+		else  // When the current width does not exceed the limit area width
 		{
-			aCurPos++;  // 继续下一个字符
+			aCurPos++;  // continue with next character
 		}
 	}
 
@@ -457,10 +457,10 @@ int TodDrawStringWrappedHelper(Graphics* g, const SexyString& theText, const Rec
 			theRect.mWidth,
 			theJustification,
 			drawString,
-			aLineFeedPos, // 上次换行的位置即为最后一行开始的位置
-			theText.size() - aLineFeedPos, // 绘制部分为从上次换行的位置开始的所有剩余文本
+			aLineFeedPos, //The position of the last line break is the beginning of the last line
+			theText.size() - aLineFeedPos, //The drawing part is all remaining text starting from the last line break position
 			theMaxChars
-		);  // 绘制最后一行的文本
+		);  // Draw the text of the last line
 		if (aLastLineLength >= 0)
 			aYOffset += aLineSpacing;
 	}
@@ -477,7 +477,7 @@ void TodDrawStringWrapped(Graphics* g, const SexyString& theText, const Rect& th
 	Rect aRectTodUse = theRect;
 	if (theJustification == DrawStringJustification::DS_ALIGN_LEFT_VERTICAL_MIDDLE ||
 		theJustification == DrawStringJustification::DS_ALIGN_RIGHT_VERTICAL_MIDDLE ||
-		theJustification == DrawStringJustification::DS_ALIGN_CENTER_VERTICAL_MIDDLE)  // 如果纵向需要居中
+		theJustification == DrawStringJustification::DS_ALIGN_CENTER_VERTICAL_MIDDLE)  // If the vertical position needs to be centered
 	{
 		aRectTodUse.mY += (aRectTodUse.mHeight - TodDrawStringWrappedHelper(g, aTextFinal, aRectTodUse, theFont, theColor, theJustification, false)) / 2;
 	}

@@ -88,8 +88,8 @@ int ReanimAtlas::PickAtlasWidth()
 			aMaxWidth = aImage->mWidth + 2;
 	}
 
-	int aWidth = FloatRoundToInt(sqrt(totalArea));  // 假定为正方向区域时，正方向的边长
-	return GetClosestPowerOf2Above(min(max(aWidth, aMaxWidth), 2048));  // 取“边长”和“最宽贴图的宽度”的较大值（且不超过 2048），并向上取至 2 的整数次幂
+	int aWidth = FloatRoundToInt(sqrt(totalArea));  // When assuming a positive direction area, the length of the side in the positive direction
+	return GetClosestPowerOf2Above(min(max(aWidth, aMaxWidth), 2048));  // Take the larger of Side Length and Width of Widest Map (and not exceed 2048), and round up to integer powers of 2
 }
 
 //0x470420
@@ -98,10 +98,10 @@ bool ReanimAtlas::ImageFits(int theImageCount, const Rect& rectTest, int theMaxW
 	if (rectTest.mX + rectTest.mWidth > theMaxWidth)
 		return false;
 
-	for (int i = 0; i < theImageCount; i++)  // 遍历贴图数组的前 theImageCount 个贴图，判断给定矩形是否与某贴图占用的区域有冲突
+	for (int i = 0; i < theImageCount; i++)  // Traverse the first theImageCount textures in the texture array to determine whether the given rectangle conflicts with the area occupied by a certain texture.
 	{
 		ReanimAtlasImage* aImage = &mImageArray[i];
-		if (Rect(aImage->mX, aImage->mY, aImage->mWidth, aImage->mHeight).Inflate(1, 1).Intersects(rectTest))  // 贴图占用区域为自身区域及向外延伸 1 像素
+		if (Rect(aImage->mX, aImage->mY, aImage->mWidth, aImage->mHeight).Inflate(1, 1).Intersects(rectTest))  // The area occupied by the texture is its own area and extends outward by 1 pixel.
 			return false;
 	}
 	return true;
@@ -117,18 +117,18 @@ bool ReanimAtlas::ImageFindPlaceOnSide(ReanimAtlasImage* theAtlasImageToPlace, i
 	for (int i = 0; i < theImageCount; i++)
 	{
 		ReanimAtlasImage* aImage = &mImageArray[i];
-		if (theToRight)  // 如果规定了居右
+		if (theToRight)  // If it is specified that the right
 		{
 			rectTest.mX = aImage->mX + aImage->mWidth + 1;
 			rectTest.mY = aImage->mY;
 		}
-		else  // 否则居于下方
+		else  // Otherwise, stay below
 		{
 			rectTest.mX = aImage->mX;
 			rectTest.mY = aImage->mY + aImage->mHeight + 1;
 		}
 
-		if (ImageFits(theImageCount, rectTest, theMaxWidth))  // 如果图片能够放得下
+		if (ImageFits(theImageCount, rectTest, theMaxWidth))  // If the picture can fit
 		{
 			theAtlasImageToPlace->mX = rectTest.mX;
 			theAtlasImageToPlace->mY = rectTest.mY;
@@ -148,7 +148,7 @@ bool ReanimAtlas::ImageFindPlace(ReanimAtlasImage* theAtlasImageToPlace, int the
 {
 	return 
 		ImageFindPlaceOnSide(theAtlasImageToPlace, theImageCount, theMaxWidth, true) || 
-		ImageFindPlaceOnSide(theAtlasImageToPlace, theImageCount, theMaxWidth, false);  // 分别尝试在居右和居下的位置放置图片
+		ImageFindPlaceOnSide(theAtlasImageToPlace, theImageCount, theMaxWidth, false);  // Try placing the image in the right and bottom positions respectively.
 }
 
 bool ReanimAtlas::PlaceAtlasImage(ReanimAtlasImage* theAtlasImageToPlace, int theImageCount, int theMaxWidth)
@@ -170,7 +170,7 @@ bool ReanimAtlas::PlaceAtlasImage(ReanimAtlasImage* theAtlasImageToPlace, int th
 //0x470580
 void ReanimAtlas::ArrangeImages(int& theAtlasWidth, int& theAtlasHeight)
 {
-	std::sort(mImageArray, mImageArray + mImageCount, sSortByNonIncreasingHeight);  // 将所有图集图片按高度降序排序
+	std::sort(mImageArray, mImageArray + mImageCount, sSortByNonIncreasingHeight);  // Sort all gallery images in descending order of height
 	theAtlasWidth = PickAtlasWidth();
 	theAtlasHeight = 0;
 
@@ -180,8 +180,8 @@ void ReanimAtlas::ArrangeImages(int& theAtlasWidth, int& theAtlasHeight)
 		PlaceAtlasImage(aImage, i, theAtlasWidth);
 
 		/* 
-			此处原为“theAtlasHeight = max(GetClosestPowerOf2Above(aImage->mY + aImage->mHeight), theAtlasHeight);”
-			这样在 max 宏展开时，会导致 GetClosestPowerOf2Above(aImage->mY + aImage->mHeight) 被重复计算，故稍作修改
+		This was originally "theAtlasHeight = max(GetClosestPowerOf2Above(aImage->mY + aImage->mHeight), theAtlasHeight);"
+		This will cause GetClosestPowerOf2Above(aImage->mY + aImage->mHeight) to be repeatedly calculated when the max macro is expanded, so it is slightly modified.
 		*/ 
 
 		int aImageHeight = GetClosestPowerOf2Above(aImage->mY + aImage->mHeight);
@@ -220,12 +220,12 @@ void ReanimAtlas::ReanimAtlasCreate(ReanimatorDefinition* theReanimDef)
 	for (int aTrackIndex = 0; aTrackIndex < theReanimDef->mTrackCount; aTrackIndex++)
 	{
 		ReanimatorTrack* aTrack = &theReanimDef->mTracks[aTrackIndex];
-		for (int aKeyIndex = 0; aKeyIndex < aTrack->mTransformCount; aKeyIndex++)  // 遍历每一帧上的贴图
+		for (int aKeyIndex = 0; aKeyIndex < aTrack->mTransformCount; aKeyIndex++)  // Iterate through the textures on each frame
 		{
 			Image* aImage = aTrack->mTransforms[aKeyIndex].mImage;
-			// 如果存在贴图，且贴图的宽、高均不大于 254 像素，且相同的贴图未加入至图集图片数组中
+			// If a texture exists, and the width and height of the texture are not greater than 254 pixels, and the same texture is not added to the atlas image array
 			if (aImage != nullptr && aImage->mWidth <= 254 && aImage->mHeight <= 254 && FindImage(aImage) < 0)
-				AddImage(aImage);  // 先将其加入数组中，后续再确定其位于图集中的位置
+				AddImage(aImage);  // First add it to the array, and then determine its position in the atlas.
 		}
 	}
 
@@ -235,14 +235,14 @@ void ReanimAtlas::ReanimAtlasCreate(ReanimatorDefinition* theReanimDef)
 	for (int aTrackIndex = 0; aTrackIndex < theReanimDef->mTrackCount; aTrackIndex++)
 	{
 		ReanimatorTrack* aTrack = &theReanimDef->mTracks[aTrackIndex];
-		for (int aKeyIndex = 0; aKeyIndex < aTrack->mTransformCount; aKeyIndex++)  // 遍历每一帧上的贴图
+		for (int aKeyIndex = 0; aKeyIndex < aTrack->mTransformCount; aKeyIndex++)  // Iterate through the textures on each frame
 		{
 			Image*& aImage = aTrack->mTransforms[aKeyIndex].mImage;
 			if (aImage != nullptr && aImage->mWidth <= 254 && aImage->mHeight <= 254)
 			{
 				int aImageIndex = FindImage(aImage);
 				TOD_ASSERT(aImageIndex >= 0);
-				aImage = (Image*)(aImageIndex + 1);  // ★ 将图片在数组中的序号作为 Image* 修改动画定义
+				aImage = (Image*)(aImageIndex + 1);  // ★ Use the serial number of the image in the array as Image* to modify the animation definition
 			}
 		}
 	}
@@ -252,7 +252,7 @@ void ReanimAtlas::ReanimAtlasCreate(ReanimatorDefinition* theReanimDef)
 	for (int aImageIndex = 0; aImageIndex < mImageCount; aImageIndex++)
 	{
 		ReanimAtlasImage* aImage = &mImageArray[aImageIndex];
-		aMemoryGraphis.DrawImage(aImage->mOriginalImage, aImage->mX, aImage->mY);  // 将原贴图绘制在图集上
+		aMemoryGraphis.DrawImage(aImage->mOriginalImage, aImage->mX, aImage->mY);  // Draw the original texture on the atlas
 	}
-	FixPixelsOnAlphaEdgeForBlending(mMemoryImage);  // 将所有透明像素的颜色修正为其周围像素颜色的平均值
+	FixPixelsOnAlphaEdgeForBlending(mMemoryImage);  // Correct the color of all transparent pixels to the average of the colors of surrounding pixels
 }

@@ -1076,12 +1076,12 @@ void Challenge::BeghouledPopulateBoard()
 	{
 		LoadBeghouledBoardState(&aBoardState);
 		BeghouledFillHoles(&aBoardState, aAllowGeneratedCascades);
-		// 填充后，若不存在可消除的移动，则重新填充 1 次
+		//After filling, if there is no move that can be eliminated, refill once
 		if (BeghouledCheckForPossibleMoves(&aBoardState))
 			break;
 	}
 
-	// 根据填充的结果开始执行创建植物
+	//Start creating plants based on the filled results
 	BeghouledCreatePlants(&aEmptyBoardState, &aBoardState);
 }
 
@@ -2817,24 +2817,24 @@ void Challenge::WhackAZombieSpawning()
 
 	if (--mChallengeStateCounter == 0)
 	{
-		// 根据当前波数计算当前处于的阶段
+		// Calculate the current stage based on the current wave number
 		int aPhase = ClampInt((mBoard->mCurrentWave - 1) * 6 / 12, 0, 5);
-		// 在不同阶段下出现路障、铁桶僵尸及出现二、三只僵尸的权重
+		//The weight of roadblocks, iron barrel zombies and two or three zombies appearing in different stages
 		const int aDoubleChance[6] = { 0, 30, 10, 10, 15, 18 };
 		const int aTripleChance[6] = { 0, 0, 0, 0, 10, 13 };
 		const int aPailChance[6] = { 0, 0, 0, 10, 15, 15 };
 		const int aConeChance[6] = { 0, 0, 30, 30, 30, 30 };
-		// 默认的僵尸数量为 1 只
+		//The default number of zombies is 1
 		int aZombieCount = 1;
-		// 默认的僵尸类型为普通僵尸
+		//The default zombie type is ordinary zombies
 		ZombieType aZombieType = ZOMBIE_NORMAL;
-		// 分别取僵尸类型及僵尸数量的随机值
+		// Get random values ​​of zombie type and zombie quantity respectively
 		int aNumHit = Rand(100);
 		int aTypeHit = Rand(100);
-		// 判断是否为最后一波
+		// Determine whether it is the last wave
 		bool aIsFinalWave = mBoard->mCurrentWave == mBoard->mNumWaves;
 
-		// 确定僵尸数量
+		// Determine the number of zombies
 		if (aIsFinalWave)
 		{
 			aZombieCount = 20;
@@ -2848,7 +2848,7 @@ void Challenge::WhackAZombieSpawning()
 			aZombieCount = 2;
 		}
 
-		// 确定僵尸类型
+		// Determine the zombie type
 		if (aTypeHit < aPailChance[aPhase] && aZombieCount < 3)
 		{
 			aZombieType = ZOMBIE_PAIL;
@@ -3031,14 +3031,14 @@ void Challenge::DrawStormFlash(Graphics* g, int theTime, int theMaxAmount)
 {
 	MTRand aDrawRand = MTRand(mBoard->mMainCounter / 6);
 	int aDarkness = TodAnimateCurve(150, 0, theTime, 255 - theMaxAmount, 255, CURVE_LINEAR) + aDrawRand.NextNoAssert((unsigned long)64) - 32;
-	// 设置暴风雨阴暗的颜色
+	// Set the dark color of the storm
 	g->SetColor(Color(0, 0, 0, ClampInt(aDarkness, 0, 255)));
-	// 绘制暴风雨阴暗的主色
+	// Draw the main color of stormy darkness
 	g->FillRect(-1000, -1000, 2800, 2600);
 
-	// 设置闪电亮光的颜色
+	//Set the color of lightning light
 	g->SetColor(Color(255, 255, 255, TodAnimateCurve(150, 75, theTime, theMaxAmount, 0, CURVE_LINEAR)));
-	// 绘制闪光
+	// draw flash
 	g->FillRect(-1000, -1000, 2800, 2600);
 }
 
@@ -3071,7 +3071,7 @@ void Challenge::DrawRain(Graphics* g)
 	int aTime = mBoard->mEffectCounter % 100;
 	int aTimeOffsetXEst = TodAnimateCurve(0, 100, aTime, 0, -100, CURVE_LINEAR);
 	int aTimeOffsetYEst = TodAnimateCurve(0, 20, aTime, -100, 0, CURVE_LINEAR);
-	// 绘制远景的雨
+	// Draw the rain in the distant view
 	for (int aHorCnt = 9; aHorCnt > 0; aHorCnt--)
 	{
 		for (int aVerCnt = 7; aVerCnt > 0; aVerCnt--)
@@ -3085,7 +3085,7 @@ void Challenge::DrawRain(Graphics* g)
 	aTime = mBoard->mEffectCounter;
 	float aTimeOffsetXCls = TodAnimateCurve(0, 161, aTime % 161, 0, -100, CURVE_LINEAR);
 	float aTimeOffsetYCls = TodAnimateCurve(0, 33, aTime % 33, -100, 0, CURVE_LINEAR);
-	// 绘制近景的雨
+	// Draw close-up rain
 	for (int aHorCnt = 0; aHorCnt < 9; aHorCnt++)
 	{
 		for (int aVerCnt = 0; aVerCnt < 7; aVerCnt++)
@@ -3453,7 +3453,7 @@ GridItem* Challenge::GetPortalLeftRight(int theGridX, int theGridY, bool theToLe
 		int aPortalX = aGridItem->mGridX;
 		if (aPortalX == theGridX)
 		{
-			continue;  // 排除传送门与 theGridX 在同一列的情况
+			continue;  //Exclude the case where the portal is in the same column as theGridX
 		}
 
 		bool aIsDir = (aPortalX > theGridX) ^ theToLeft;
@@ -4467,7 +4467,7 @@ void Challenge::IZombiePlacePlantInSquare(SeedType theSeedType, int theGridX, in
 //0x42A6C0
 void Challenge::IZombiePlacePlants(SeedType theSeedType, int theCount, int theGridY)
 {
-	// 关卡中植物（或限制红线）的列数
+	//The number of columns of plants (or limiting red lines) in the level
 	int aColumns = 6;
 	GameMode aGameMode = mApp->mGameMode;
 	if (aGameMode >= GAMEMODE_PUZZLE_I_ZOMBIE_1 && aGameMode <= GAMEMODE_PUZZLE_I_ZOMBIE_5)
@@ -4479,31 +4479,31 @@ void Challenge::IZombiePlacePlants(SeedType theSeedType, int theCount, int theGr
 		aColumns = 5;
 	}
 
-	// 只能生成在 aMinGridY 行与 aMaxGridY 行之间
+	// Can only be generated between aMinGridY rows and aMaxGridY rows
 	int aMinGridY, aMaxGridY;
-	if (theGridY == -1)  // 参数 theGridY 使用默认的 -1 时，不限定生成范围
+	if (theGridY == -1)  // When the parameter theGridY uses the default -1, the generation range is not limited.
 	{
-		aMinGridY = 0;  // 从第 0 行开始
-		aMaxGridY = 4;  // 至第 4 行结束
+		aMinGridY = 0;  // Start at line 0
+		aMaxGridY = 4;  //To the end of line 4
 	}
 	else
 	{
 		aMinGridY = theGridY;
-		aMaxGridY = theGridY;  // 可种植范围从 theGridY 行至 theGridY 行，表示限定种植的行只能为 theGridY
+		aMaxGridY = theGridY;  // The planting range is from theGridY row to theGridY row, which means that the planting rows can only be theGridY
 	}
 
 	int aGridArrayCount = 0;
 	TodWeightedGridArray aGridArray[MAX_GRID_SIZE_X * MAX_GRID_SIZE_Y];
-	// 将从 theGridY 行至 aMaxGridY 行的选择数据写入格子数组中
+	//Write the selection data from theGridY row to aMaxGridY row into the grid array
 	for (int aRow = aMinGridY; aRow <= aMaxGridY; aRow++)
 	{
-		// 对于每一行，写入红线左侧每一列的选择数据
+		//For each row, write the selection data of each column to the left of the red line
 		for (int aCol = 0; aCol < aColumns; aCol++)
 		{
-			// 当且仅当格子内可以种植目标植物时
+			// If and only if the target plant can be planted in the grid
 			if (mBoard->CanPlantAt(aCol, aRow, theSeedType) == PLANTING_OK)
 			{
-				// 坚果和火炬树桩只会出现在靠右侧的 3 列
+				// Nuts and torch stumps will only appear in the 3 columns on the right
 				if ((theSeedType != SEED_WALLNUT && theSeedType != SEED_TORCHWOOD) || aColumns - aCol <= 3)
 				{
 					aGridArray[aGridArrayCount].mX = aCol;
@@ -4518,7 +4518,7 @@ void Challenge::IZombiePlacePlants(SeedType theSeedType, int theCount, int theGr
 	if (theCount > aGridArrayCount)
 		theCount = aGridArrayCount;
 
-	// 依次选择 theCount 个格子并在这些格子中放置植物
+	//Select theCount grids in turn and place plants in these grids
 	for (int i = 0; i < theCount; i++)
 	{
 		TodWeightedGridArray* aGrid = TodPickFromWeightedGridArray(aGridArray, aGridArrayCount);
@@ -4678,24 +4678,24 @@ void Challenge::IZombieInitLevel()
 		{
 			switch (RandRangeInt(0, 4))
 			{
-			case 0:  // 输出阵
+			case 0:  //output matrix
 				IZombiePlacePlants(SEED_SNOWPEA, 9, -1);
 				IZombiePlacePlants(SEED_SPLITPEA, 4, -1);
 				IZombiePlacePlants(SEED_REPEATER, 4, -1);
 				break;
-			case 1:  // 爆炸阵
+			case 1:  // Explosion Array
 				IZombiePlacePlants(SEED_POTATOMINE, 9, -1);
 				IZombiePlacePlants(SEED_CHOMPER, 8, -1);
 				break;
-			case 2:  // 倾斜阵
+			case 2:  // tilt array
 				IZombiePlacePlants(SEED_SPIKEWEED, 9, -1);
 				IZombiePlacePlants(SEED_STARFRUIT, 8, -1);
 				break;
-			case 3:  // 穿刺阵
+			case 3:  //Puncture Array
 				IZombiePlacePlants(SEED_FUMESHROOM, 9, -1);
 				IZombiePlacePlants(SEED_MAGNETSHROOM, 8, -1);
 				break;
-			default:  // 回复阵
+			default:  //reply matrix
 				IZombiePlacePlants(SEED_SCAREDYSHROOM, 12, -1);
 				IZombiePlacePlants(SEED_SUNFLOWER, 5, -1);
 			}
@@ -4706,7 +4706,7 @@ void Challenge::IZombieInitLevel()
 			{
 			case 0:
 			case 1:
-			case 2:  // 综合阵
+			case 2:  // Comprehensive array
 				IZombiePlacePlants(SEED_WALLNUT, 1, -1);
 				IZombiePlacePlants(SEED_TORCHWOOD, 1, -1);
 				IZombiePlacePlants(SEED_POTATOMINE, 1, -1);
@@ -4724,7 +4724,7 @@ void Challenge::IZombieInitLevel()
 				IZombiePlacePlants(SEED_SPIKEWEED, 2, -1);
 				break;
 			case 3:
-			case 4:  // 控制阵
+			case 4:  //Control matrix
 				IZombiePlacePlants(SEED_TORCHWOOD, 1, -1);
 				IZombiePlacePlants(SEED_SPLITPEA, 3, -1);
 				IZombiePlacePlants(SEED_REPEATER, 1, -1);
@@ -4735,7 +4735,7 @@ void Challenge::IZombieInitLevel()
 				IZombiePlacePlants(SEED_MAGNETSHROOM, 1, -1);
 				IZombiePlacePlants(SEED_SPIKEWEED, 3, -1);
 				break;
-			default:  // 即死阵
+			default:  // Instant death array
 				IZombiePlacePlants(SEED_POTATOMINE, 4, -1);
 				IZombiePlacePlants(SEED_CHOMPER, 3, -1);
 				IZombiePlacePlants(SEED_SQUASH, 3, -1);
@@ -5299,7 +5299,7 @@ void Challenge::TreeOfWisdomDraw(Graphics* g)
 
 	Reanimation* aReanimTree = mApp->ReanimationGet(mReanimChallenge);
 	aReanimTree->mEnableExtraOverlayDraw = false;
-	aReanimTree->DrawRenderGroup(g, 1);  // 绘制背景
+	aReanimTree->DrawRenderGroup(g, 1);  // draw background
 	for (int i = 0; i < 6; i++)
 	{
 		mApp->ReanimationGet(mReanimClouds[i])->DrawRenderGroup(g, 0);
@@ -5315,10 +5315,10 @@ void Challenge::TreeOfWisdomDraw(Graphics* g)
 	{
 		aReanimTree->mEnableExtraOverlayDraw = false;
 	}
-	aReanimTree->DrawRenderGroup(g, 2);  // 绘制树干
+	aReanimTree->DrawRenderGroup(g, 2);  // draw tree trunk
 
 	aReanimTree->mEnableExtraOverlayDraw = false;
-	aReanimTree->DrawRenderGroup(g, 3);  // 绘制土地
+	aReanimTree->DrawRenderGroup(g, 3);  // draw land
 
 	if (aMouseOn)
 	{
@@ -5329,7 +5329,7 @@ void Challenge::TreeOfWisdomDraw(Graphics* g)
 	{
 		aReanimTree->mEnableExtraOverlayDraw = false;
 	}
-	aReanimTree->DrawRenderGroup(g, 4);  // 绘制根部
+	aReanimTree->DrawRenderGroup(g, 4);  // Draw the root
 
 	if (mChallengeState == STATECHALLENGE_TREE_GIVE_WISDOM || mChallengeState == STATECHALLENGE_TREE_BABBLING)
 	{

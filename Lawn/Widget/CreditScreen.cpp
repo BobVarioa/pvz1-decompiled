@@ -670,20 +670,20 @@ void CreditScreen::DrawFogEffect(Graphics* g, float theTime)
     {
         for (int y = 0; y < 7; y++)
         {
-            // 取得格子内的雾的形状
+            // Get the shape of the fog within the grid
             int aCelLook = x + (x + 17) * y;
             int aCelCol = aCelLook % 8;
-            // 本格浓雾横坐标 = 列 * 80 + 浓雾偏移 - 15
+            // The abscissa of dense fog in this grid = column * 80 + dense fog offset - 15
             float aPosX = x * 80 - 15.0f;
-            // 本格浓雾纵坐标 = 行 * 85 + 200
+            // The vertical coordinate of dense fog in this grid = row * 85 + 200
             float aPosY = y * 85 + 200.0f;
-            // 开始计算周期变化的颜色，aAnimTime 为 MV 动画播放至当前时刻需要的时间（秒数）
+            // Start calculating the color of periodic changes. aAnimTime is the time (seconds) required for the MV animation to play to the current moment.
             float aAnimTime = aCreditsReanim->mDefinition->mTracks->mTransformCount * aCreditsReanim->mAnimTime / (aCreditsReanim->mAnimRate * SECONDS_PER_UPDATE);
             float aTime = aAnimTime * PI * 2;
-            // 与行、列有关的初始相位
+            // Initial phase relative to rows and columns
             float aPhaseX = 6 * PI * x / 14;
             float aPhaseY = 6 * PI * y / 7;
-            // 根据初相和时间计算当前相位
+            // Calculate the current phase based on the initial phase and time
             float aMotion = 13 + 4 * sin(aTime / 900 + aPhaseY) + 8 * sin(aTime / 500 + aPhaseX);
 
             int aColorVariant = 255 - (aCelLook % 20) * 1.5f - aMotion * 1.5f;

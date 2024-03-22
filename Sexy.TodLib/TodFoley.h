@@ -14,11 +14,11 @@ using namespace Sexy;
 
 enum FoleyFlags
 {
-    FOLEYFLAGS_LOOP,                // 循环播放
-    FOLEYFLAGS_ONE_AT_A_TIME,       // 禁止叠加播放：指定该种类的音效同时至多存在 1 个实例，重复播放时仅增加引用计数并刷新开始时间
-    FOLEYFLAGS_MUTE_ON_PAUSE,       // 暂停时静默
-    FOLEYFLAGS_USES_MUSIC_VOLUME,   // 使用音乐音量，指定该种类的音效使用与背景音乐相同的音量
-    FOLEYFLAGS_DONT_REPEAT          // 禁止变式重复，指定该种类的音效每次实际播放的变式不得与上一次相同
+    FOLEYFLAGS_LOOP,                // Loop
+    FOLEYFLAGS_ONE_AT_A_TIME,       // Disable overlay playback: Specify that there is at most 1 instance of this type of sound effect at the same time. When played repeatedly, only the reference count will be increased and the start time will be refreshed.
+    FOLEYFLAGS_MUTE_ON_PAUSE,       // Silent when paused
+    FOLEYFLAGS_USES_MUSIC_VOLUME,   // Use music volume, specify that this type of sound effect uses the same volume as the background music
+    FOLEYFLAGS_DONT_REPEAT          // Variation duplication is prohibited. The actual variation played each time for a specified type of sound effect must not be the same as the last time.
 };
 
 enum FoleyType

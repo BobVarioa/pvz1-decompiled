@@ -545,37 +545,37 @@ SeedType AlmanacDialog::SeedHitTest(int x, int y)
 
 bool AlmanacDialog::ZombieHasSilhouette(ZombieType theZombieType)
 {
-	// 除雪人僵尸以外的其他僵尸，或者雪人僵尸已经可以刷出（已经到达或完成冒险模式二周目 4-10 关卡），则不会显示为剪影
+	// Zombies other than yeti zombies, or yeti zombies that can be spawned (have reached or completed levels 4-10 of the second week of adventure mode) will not be displayed as silhouettes.
 	if (theZombieType != ZombieType::ZOMBIE_YETI || mApp->CanSpawnYetis())
 		return false;
 
-	// 排除上述情况后，若已完成雪人僵尸出现的关卡（冒险模式一周目 4-10 关卡），则雪人僵尸显示为剪影
+	// After excluding the above situation, if you have completed the level where the Yeti Zombie appears (levels 4-10 in one week of Adventure Mode), the Yeti Zombie will appear as a silhouette.
 	return mApp->HasFinishedAdventure() || mApp->mPlayerInfo->GetLevel() > GetZombieDefinition(ZombieType::ZOMBIE_YETI).mStartingLevel;
 }
 
 //0x403A10
 bool AlmanacDialog::ZombieIsShown(ZombieType theZombieType)
 {
-	// 试玩模式下，仅展示潜水僵尸及其之前出现的僵尸
+	// In trial mode, only diving zombies and their previous zombies are displayed.
 	if (mApp->IsTrialStageLocked() && theZombieType > ZombieType::ZOMBIE_SNORKEL)
 		return false;
 
-	// 对于雪人僵尸，要求其可以在刷怪中出现（已经到达或完成冒险模式二周目 4-10 关卡），
-	// 或已得知其存在但未解锁其形象（已经完成冒险模式一周目 4-10 关卡，但未到达二周目 4-10 关卡）
+	// For yeti zombies, it is required that they can appear in monster spawning (have reached or completed levels 4-10 of the second week of adventure mode),
+	// Or you have learned of its existence but have not unlocked its image (you have completed levels 4-10 of the first adventure mode, but have not reached levels 4-10 of the second round)
 	if (theZombieType == ZombieType::ZOMBIE_YETI)
 		return mApp->CanSpawnYetis() || ZombieHasSilhouette(ZombieType::ZOMBIE_YETI);
 
-	// 对于冒险模式中出现的僵尸
+	// For zombies that appear in adventure mode
 	if (theZombieType <= ZombieType::ZOMBIE_BOSS)
 	{
-		// 冒险模式一周目完成后，图鉴展示所有僵尸
+		// After completing one round of adventure mode, all zombies will be displayed in the illustrated book
 		if (mApp->HasFinishedAdventure())
 			return true;
 
 		int aLevel = mApp->mPlayerInfo->GetLevel();
 		int aStart = GetZombieDefinition(theZombieType).mStartingLevel;
-		// 要求已经达到僵尸首次出现的关卡
-		// 对于不能通过自然刷怪出现的僵尸（小鬼僵尸、雪橇僵尸小队、伴舞僵尸），额外要求已通过其首次出现的关卡或已击败过该僵尸
+		// The requirement has been to reach the level where zombies first appeared.
+		// For zombies that cannot appear through natural spawning (imp zombies, bonsled zombies, dancing zombies), the additional requirement is to have passed the level where they first appeared or to have defeated the zombie
 		return aStart <= aLevel && (aStart != aLevel || !Board::IsZombieTypeSpawnedOnly(theZombieType) || gZombieDefeated[theZombieType]);
 	}
 
@@ -588,22 +588,22 @@ bool AlmanacDialog::ZombieHasDescription(ZombieType theZombieType)
 	int aLevel = mApp->mPlayerInfo->GetLevel();
 	int aStart = GetZombieDefinition(theZombieType).mStartingLevel;
 
-	// 对于雪人僵尸
+	// for yeti zombies
 	if (theZombieType == ZombieType::ZOMBIE_YETI)
 	{
-		// 当雪人僵尸不可在刷怪中出现时（冒险模式二周目 4-10 关卡之前），不显示僵尸描述
+		// When yeti zombies cannot appear in monster spawning (before levels 4-10 in the second round of adventure mode), the zombie description is not displayed.
 		if (!mApp->CanSpawnYetis())
 			return false;
-		// 从第三周目开始，总是显示雪人僵尸的描述
+		// Starting from the third episode, the description of the Yeti Zombie is always displayed.
 		if (mApp->mPlayerInfo->mFinishedAdventure >= 2)
 			return true;
 	}
-	// 对于雪人僵尸外的其他僵尸，当冒险模式已完成时，总是显示僵尸的描述
+	// For zombies other than Yeti Zombies, the zombie's description is always displayed when Adventure Mode has been completed
 	else if (mApp->HasFinishedAdventure())
 		return true;
 
-	// 雪人僵尸在二周目 4-10 关卡至三周目之间，或其他僵尸在冒险模式一周目中的情况，
-	// 要求已经达到僵尸首次出现的关卡，且已通过其首次出现的关卡或已击败过该僵尸
+	// The yeti zombie is between levels 4-10 of the second round and the third round, or other zombies in the first round of the adventure mode.
+	// It is required to have reached the level where the zombie first appeared, and to have passed the level where it first appeared or to have defeated the zombie.
 	return aStart <= aLevel && (aStart != aLevel || gZombieDefeated[theZombieType]);
 }
 

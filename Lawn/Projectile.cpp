@@ -148,7 +148,7 @@ Plant* Projectile::FindCollisionTargetPlant()
 				aPlant->mSeedType == SeedType::SEED_POTATOMINE ||
 				aPlant->mSeedType == SeedType::SEED_SPIKEWEED ||
 				aPlant->mSeedType == SeedType::SEED_SPIKEROCK ||
-				aPlant->mSeedType == SeedType::SEED_LILYPAD)  // 僵尸豌豆不能击中低矮植物
+				aPlant->mSeedType == SeedType::SEED_LILYPAD)  // Zombie peas cannot hit low plants
 				continue;
 		}
 
@@ -737,7 +737,7 @@ void Projectile::UpdateMotion()
 #ifdef DO_FIX_BUGS
 	if (mProjectileType == ProjectileType::PROJECTILE_COBBIG)
 	{
-		aSlopeHeightChange = 0.0f;  // 修复“上界之风”
+		aSlopeHeightChange = 0.0f;  // Fix for "Winds from Above"
 	}
 #endif
 	if (mMotionType == ProjectileMotion::MOTION_FLOAT_OVER)
