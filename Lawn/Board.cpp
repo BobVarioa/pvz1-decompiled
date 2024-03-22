@@ -7881,7 +7881,7 @@ static void TodCrash()
 	TOD_ASSERT(false, "Crash%s", "!!!!");
 }
 
-//0x41B950（原版中废弃）
+//0x41B950 (obsolete in the original version)
 void Board::KeyChar(SexyChar theChar)
 {
 	if (!mApp->mDebugKeysEnabled)

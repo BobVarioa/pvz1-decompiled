@@ -339,7 +339,8 @@ void ZenGarden::FindOpenZenGardenSpot(int& theSpotX, int& theSpotY)
                 PottedPlant* aPottedPlant = PottedPlantFromIndex(i);
                 if (aPottedPlant->mWhichZenGarden == GardenType::GARDEN_MAIN && aPottedPlant->mX == x && aPottedPlant->mY == y)
                 {
-                    continue;  // If there are already potted plants in the grid, you cannot select them.
+					// CHANGE: fix wrong continue location
+                    goto end;  // If there are already potted plants in the grid, you cannot select them.
                 }
             }
 
@@ -347,10 +348,18 @@ void ZenGarden::FindOpenZenGardenSpot(int& theSpotX, int& theSpotY)
             aPicks[aPickCount].mY = y;
             aPicks[aPickCount].mWeight = 1;
             aPickCount++;
+
+			end: 
         }
     }
 
     TodWeightedGridArray* aSpot = TodPickFromWeightedGridArray(aPicks, aPickCount);
+	if (aSpot == nullptr) {
+		// CHANGE: this *shouldn't* happen but for instance if the player is using debug keys, they might be able to add plants to an already full garden, thus having no location to place the plant
+		theSpotX = 0;
+		theSpotY = 0;
+		return;
+	}
     theSpotX = aSpot->mX;
     theSpotY = aSpot->mY;
 }
