@@ -8,14 +8,15 @@ Open the solution in the repo in Visual Studio, then build it. Currently no othe
 ### Keybinds 
 ```
 Zen Garden
-	m = Full Garden (Marigolds)
-	+ = Full Garden (Random)
-	a = Full Garden (Random, Grown)
+	m = Add a random marigold to the garden
+	+ = Add a random plant to the garden 
+	a = Add a random grown plant to the garden
 	f = Auto Satiate
 	r = Reset Plant Timers
 	s = Reset Stinky
 	c = Gain Chocolate
 	] = Switch Wheelbarrow Plant
+	g = Clear Zen Garden
 
 Tree Of Wisdom
 	f = Auto Fertilize

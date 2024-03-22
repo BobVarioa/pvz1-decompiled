@@ -8030,6 +8030,19 @@ void Board::KeyChar(SexyChar theChar)
 			}
 			return;
 		}
+
+		if (theChar == _S('g')) {
+			Plant* aPlant = nullptr;
+			while (IteratePlants(aPlant))
+			{
+				if (aPlant->mPottedPlantIndex >= 0)
+				{
+					TOD_ASSERT(aPlant->mPottedPlantIndex < mApp->mPlayerInfo->mNumPottedPlants);
+					mApp->mZenGarden->RemovePottedPlant(aPottedPlant);
+				}
+			}
+			return;
+		}
 	}
 
 	if (mApp->mGameMode == GameMode::GAMEMODE_TREE_OF_WISDOM)
