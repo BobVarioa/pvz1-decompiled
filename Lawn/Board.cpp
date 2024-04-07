@@ -8457,6 +8457,11 @@ void Board::KeyChar(SexyChar theChar)
 		AddZombie(ZombieType::ZOMBIE_DOOR, Zombie::ZOMBIE_WAVE_DEBUG);
 		return;
 	}
+	if (theChar == _S('S'))
+	{
+		AddZombie(ZombieType::ZOMBIE_TRASHCAN, Zombie::ZOMBIE_WAVE_DEBUG);
+		return;
+	}
 	if (theChar == _S('L'))
 	{
 		AddZombie(ZombieType::ZOMBIE_LADDER, Zombie::ZOMBIE_WAVE_DEBUG);

@@ -290,6 +290,7 @@ public:
     void                            DragUnder();
     static /*inline*/ void          SetupDoorArms(Reanimation* aReanim, bool theShow);
     static void                     SetupReanimLayers(Reanimation* aReanim, ZombieType theZombieType);
+    static void                     SetupGargReanimLayers(Reanimation* aReanim, ZombieType theZombieType);
     /*inline*/ bool                 IsOnBoard();
     void                            DrawButter(Graphics* g, const ZombieDrawPosition& theDrawPos);
     bool                            IsImmobilizied();
@@ -405,6 +406,8 @@ public:
     int                             mFirstAllowedWave;
     int                             mPickWeight;
     const SexyChar*                 mZombieName;
+    int thePage = -10000;
+    int getPage();       
 };
 extern ZombieDefinition gZombieDefs[NUM_ZOMBIE_TYPES];  //0x69DA80
 

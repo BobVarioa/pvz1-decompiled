@@ -5,6 +5,18 @@ This project is based-on a decompilation of the original retail release of Plant
 ### Build 
 Open the solution in the repo in Visual Studio, then build it. Currently no other ways to build the project are supported.
 
+#### List of defines
+```
+general:
+	WIDESCREEN = enables widescreen
+	REVERSED_SCROLLING = reverses scrolling
+	DO_FIX_BUGS = fixes various bugs
+
+enables features exclusive to:
+	PVZ_CONSOLE
+	PVZ_WEB
+```
+
 ### Keybinds 
 ```
 Zen Garden
@@ -36,6 +48,7 @@ Zombie Summons
 	b = Bungee summon
 	o = Football summon
 	s = Door summon
+	S = Trash can summon
 	L = Ladder summon
 	y = Yeti summon
 	a = Flag summon

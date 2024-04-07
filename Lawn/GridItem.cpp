@@ -319,14 +319,14 @@ void GridItem::DrawScaryPot(Graphics* g)
             aInsideGraphics.mScaleY = 0.4f;
             float aOffsetX = 6.0f;
             float aOffsetY = 19.0f;
-            if (mZombieType == ZombieType::ZOMBIE_FOOTBALL)
+            if (mZombieType == ZombieType::ZOMBIE_FOOTBALL || mZombieType == ZombieType::ZOMBIE_GIGA_FOOTBALL)
             {
                 aInsideGraphics.mScaleX = 0.4f;
                 aInsideGraphics.mScaleY = 0.4f;
                 aOffsetX = 1.0f;
                 aOffsetY = 16.0f;
             }
-            if (mZombieType == ZombieType::ZOMBIE_GARGANTUAR)
+            if (mZombieType == ZombieType::ZOMBIE_GARGANTUAR || mZombieType == ZombieType::ZOMBIE_REDEYE_GARGANTUAR)
             {
                 aInsideGraphics.mScaleX = 0.3f;
                 aInsideGraphics.mScaleY = 0.3f;

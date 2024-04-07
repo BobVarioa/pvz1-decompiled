@@ -111,3 +111,6 @@ const int           STORESCREEN_COINBANK_X = 650;
 const int           STORESCREEN_COINBANK_Y = 559;
 const int           STORESCREEN_PAGESTRING_X = 470;
 const int           STORESCREEN_PAGESTRING_Y = 500;
+
+// Almanac pages
+const int 			MAX_ALMANAC_PAGE = 1;

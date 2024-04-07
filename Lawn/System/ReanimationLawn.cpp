@@ -267,6 +267,8 @@ MemoryImage* ReanimatorCache::MakeCachedZombieFrame(ZombieType theZombieType)
 
 		if (theZombieType == ZombieType::ZOMBIE_DOOR)
 			aReanim.AssignRenderGroupToTrack("anim_screendoor", RENDER_GROUP_NORMAL);
+		else if (theZombieType == ZombieType::ZOMBIE_TRASHCAN)
+			aReanim.AssignRenderGroupToTrack("anim_trashcan", RENDER_GROUP_NORMAL);
 		else if (theZombieType == ZombieType::ZOMBIE_FLAG)
 		{
 			Reanimation aReanimFlag;
@@ -274,7 +276,58 @@ MemoryImage* ReanimatorCache::MakeCachedZombieFrame(ZombieType theZombieType)
 			aReanimFlag.SetFramesForLayer("Zombie_flag");
 			aReanimFlag.Draw(&aMemoryGraphics);
 		}
+		else if (theZombieType == ZombieType::ZOMBIE_PEA_HEAD)
+		{
+			Reanimation aReanimHead;
+			aReanimHead.ReanimationInitializeType(aPosX + 72, aPosY - 2, ReanimationType::REANIM_PEASHOOTER);
+			aReanimHead.SetFramesForLayer("anim_head_idle");
+			aReanimHead.OverrideScale(-1.0f, 1.0f);
+			aReanimHead.Draw(&aMemoryGraphics);
+			aReanim.AssignRenderGroupToTrack("Zombie_neck", RENDER_GROUP_HIDDEN);
+		}
+		else if (theZombieType == ZombieType::ZOMBIE_GATLING_HEAD)
+		{
+			Reanimation aReanimHead;
+			aReanimHead.ReanimationInitializeType(aPosX + 72, aPosY - 2, ReanimationType::REANIM_GATLINGPEA);
+			aReanimHead.SetFramesForLayer("anim_head_idle");
+			aReanimHead.OverrideScale(-1.0f, 1.0f);
+			aReanimHead.Draw(&aMemoryGraphics);
+			aReanim.AssignRenderGroupToTrack("Zombie_neck", RENDER_GROUP_HIDDEN);
+		}
+		else if (theZombieType == ZombieType::ZOMBIE_SQUASH_HEAD)
+		{
+			Reanimation aReanimHead;
+			aReanimHead.ReanimationInitializeType(aPosX + 63, aPosY - 10, ReanimationType::REANIM_SQUASH);
+			aReanimHead.SetFramesForLayer("anim_idle");
+			aReanimHead.OverrideScale(-0.75f, 0.75f);
+			aReanimHead.Draw(&aMemoryGraphics);
+			aReanim.AssignRenderGroupToTrack("Zombie_neck", RENDER_GROUP_HIDDEN);
+		}
 		aReanim.Draw(&aMemoryGraphics);
+		if (theZombieType == ZombieType::ZOMBIE_WALLNUT_HEAD)
+		{
+			Reanimation aReanimHead;
+			aReanimHead.ReanimationInitializeType(aPosX + 55, aPosY - 2, ReanimationType::REANIM_WALLNUT);
+			aReanimHead.SetFramesForLayer("anim_idle");
+			aReanimHead.OverrideScale(-0.8f, 0.8f);
+			aReanimHead.Draw(&aMemoryGraphics);
+		}
+		else if (theZombieType == ZombieType::ZOMBIE_JALAPENO_HEAD)
+		{
+			Reanimation aReanimHead;
+			aReanimHead.ReanimationInitializeType(aPosX + 62, aPosY - 5, ReanimationType::REANIM_JALAPENO);
+			aReanimHead.SetFramesForLayer("anim_idle");
+			aReanimHead.OverrideScale(-1.0f, 1.0f);
+			aReanimHead.Draw(&aMemoryGraphics);
+		}
+		else if (theZombieType == ZombieType::ZOMBIE_TALLNUT_HEAD)
+		{
+			Reanimation aReanimHead;
+			aReanimHead.ReanimationInitializeType(aPosX + 50, aPosY, ReanimationType::REANIM_TALLNUT);
+			aReanimHead.SetFramesForLayer("anim_idle");
+			aReanimHead.OverrideScale(-0.8f, 0.8f);
+			aReanimHead.Draw(&aMemoryGraphics);
+		}
 	}
 	else if (aZombieDef.mReanimationType == ReanimationType::REANIM_BOSS)
 	{
@@ -292,6 +345,14 @@ MemoryImage* ReanimatorCache::MakeCachedZombieFrame(ZombieType theZombieType)
 		aReanim.AssignRenderGroupToTrack("boss_head2", RENDER_GROUP_HIDDEN);
 		aReanim.Draw(&aMemoryGraphics);
 	}
+	else if (aZombieDef.mReanimationType == ReanimationType::REANIM_GARGANTUAR)
+	{
+		Reanimation aReanim;
+		aReanim.ReanimationInitializeType(aPosX, aPosY, aZombieDef.mReanimationType);
+		aReanim.SetFramesForLayer("anim_idle");
+		Zombie::SetupGargReanimLayers(&aReanim, aUseZombieType);
+		aReanim.Draw(&aMemoryGraphics);
+	}
 	else
 	{
 		const char* aTrackName = "anim_idle";
@@ -307,7 +368,7 @@ MemoryImage* ReanimatorCache::MakeCachedZombieFrame(ZombieType theZombieType)
 		{
 			aTrackName = "anim_walk";
 		}
-		else if (theZombieType == ZombieType::ZOMBIE_GARGANTUAR)
+		else if (theZombieType == ZombieType::ZOMBIE_GARGANTUAR || theZombieType == ZombieType::ZOMBIE_REDEYE_GARGANTUAR)
 		{
 			aPosY = 60.0f;
 		}

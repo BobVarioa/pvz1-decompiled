@@ -293,6 +293,9 @@
 <Image id="ZOMBIE_SCREENDOOR1" path="Zombie_screendoor1" />
 <Image id="ZOMBIE_SCREENDOOR2" path="Zombie_screendoor2" />
 <Image id="ZOMBIE_SCREENDOOR3" path="Zombie_screendoor3" />
+<Image id="ZOMBIE_TRASHCAN1" path="Zombie_trashcan1" />
+<Image id="ZOMBIE_TRASHCAN2" path="Zombie_trashcan2" />
+<Image id="ZOMBIE_TRASHCAN3" path="Zombie_trashcan3" />
 <Image id="ZOMBIE_FLAG1" path="Zombie_flag1" />
 <Image id="ZOMBIE_FLAG3" path="Zombie_flag3" />
 <Image id="ZOMBIE_OUTERARM_UPPER2" path="Zombie_outerarm_upper2" />
@@ -301,6 +304,10 @@
 <Image id="ZOMBIE_FOOTBALL_HELMET3" path="Zombie_football_helmet3" />
 <Image id="ZOMBIE_FOOTBALL_LEFTARM_HAND" path="Zombie_football_leftarm_hand" />
 <Image id="ZOMBIE_FOOTBALL_LEFTARM_UPPER2" path="zombie_football_leftarm_upper2" />
+<Image id="ZOMBIE_GIGAFOOTBALL_HELMET" path="Zombie_GigaFootball_helmet" />
+<Image id="ZOMBIE_GIGAFOOTBALL_HELMET2" path="Zombie_GigaFootball_helmet2" />
+<Image id="ZOMBIE_GIGAFOOTBALL_HELMET3" path="Zombie_GigaFootball_helmet3" />
+<Image id="ZOMBIE_GIGAFOOTBALL_LEFTARM_HAND" path="Zombie_GigaFootball_leftarm_hand" />
 <Image id="ZOMBIE_PAPER_LEFTARM_UPPER2" path="Zombie_paper_leftarm_upper2" />
 <Image id="ZOMBIE_PAPER_LEFTARM_LOWER" path="Zombie_paper_leftarm_lower" />
 <Image id="ZOMBIE_PAPER_PAPER2" path="Zombie_paper_paper2" />
@@ -684,7 +691,7 @@
 <Image id="CHALLENGE_WINDOW_HIGHLIGHT" path="Challenge_Window_Highlight" />
 <Image id="CHALLENGE_BLANK" path="Challenge_Blank" />
 <Image id="CHALLENGE_THUMBNAILS" path="Challenge_Thumbnails" cols="22" />
-<Image id="SURVIVAL_THUMBNAILS" path="Survival_Thumbnails" cols="11" />
+<Image id="SURVIVAL_THUMBNAILS" path="Survival_Thumbnails" cols="15" />
 <Image id="LOCK" path="lock" />
 <Image id="LOCK_OPEN" path="lock_open" />
 </Resources>  

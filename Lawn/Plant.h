@@ -106,9 +106,15 @@ enum MagnetItemType
     MAGNET_ITEM_FOOTBALL_HELMET_1,
     MAGNET_ITEM_FOOTBALL_HELMET_2,
     MAGNET_ITEM_FOOTBALL_HELMET_3,
+    MAGNET_ITEM_GIGA_FOOTBALL_HELMET_1,
+    MAGNET_ITEM_GIGA_FOOTBALL_HELMET_2,
+    MAGNET_ITEM_GIGA_FOOTBALL_HELMET_3,
     MAGNET_ITEM_DOOR_1,
     MAGNET_ITEM_DOOR_2,
     MAGNET_ITEM_DOOR_3,
+    MAGNET_ITEM_TRASHCAN_1,
+    MAGNET_ITEM_TRASHCAN_2,
+    MAGNET_ITEM_TRASHCAN_3,
     //MAGNET_ITEM_PROPELLER,
     MAGNET_ITEM_POGO_1,
     MAGNET_ITEM_POGO_2,
@@ -310,6 +316,8 @@ public:
     PlantSubClass           mSubClass;          //+0x18
     int                     mLaunchRate;        //+0x1C
     const SexyChar*         mPlantName;         //+0x20
+	int thePage = -10000;   
+    int getPage();          
 };
 extern PlantDefinition gPlantDefs[SeedType::NUM_SEED_TYPES];
 

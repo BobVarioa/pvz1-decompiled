@@ -256,6 +256,8 @@ ZombieAllowedLevels gZombieAllowedLevels[NUM_ZOMBIE_TYPES] = {  //0x6A35B0
 	{ ZOMBIE_SQUASH_HEAD, {0} },
 	{ ZOMBIE_TALLNUT_HEAD, {0} },
 	{ ZOMBIE_REDEYE_GARGANTUAR, {0} },
+	{ ZOMBIE_TRASHCAN, {0} },
+	{ ZOMBIE_GIGA_FOOTBALL, {0} },
 };
 
 SeedType gArtChallengeWallnut[MAX_GRID_SIZE_Y][MAX_GRID_SIZE_X] = {  //0x6A3260
@@ -2741,6 +2743,18 @@ void Challenge::InitZombieWaves()
 	
 	if (mApp->CanSpawnYetis() && !mApp->IsWhackAZombieLevel() && !mApp->IsLittleTroubleLevel())
 		aList[ZOMBIE_YETI] = true;
+
+#ifdef PVZ_CONSOLE
+	if (GAMEMODE_CHALLENGE_LAST_STAND {
+		aList[ZOMBIE_TRASHCAN] = true;
+	}
+#endif
+#ifdef PVZ_WEB
+	if (GAMEMODE_CHALLENGE_LAST_STAND || mApp->IsScaryPotterLevel()) {
+		aList[ZOMBIE_GIGA_FOOTBALL] = true;
+	}
+#endif
+
 }
 
 //0x425DA0

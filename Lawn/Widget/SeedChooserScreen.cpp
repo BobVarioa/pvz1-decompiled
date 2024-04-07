@@ -48,7 +48,9 @@ SeedChooserScreen::SeedChooserScreen()
 	mStartButton->mDownImage = nullptr;
 	mStartButton->mDisabledImage = Sexy::IMAGE_SEEDCHOOSER_BUTTON_DISABLED;
 	mStartButton->mOverOverlayImage = Sexy::IMAGE_SEEDCHOOSER_BUTTON_GLOW;
-	mStartButton->SetFont(Sexy::FONT_DWARVENTODCRAFT15);
+	mStartButton->SetFont(Sexy::FONT_DWARVENTODCRAFT18YELLOW);
+	mStartButton->mColors[ButtonWidget::COLOR_LABEL] = Color::White;
+	mStartButton->mColors[ButtonWidget::COLOR_LABEL_HILITE] = Color::White;
 	mStartButton->Resize(154, 545, 156, 42);
 	mStartButton->mTextOffsetY = -1;
 	EnableStartButton(false);
@@ -575,8 +577,14 @@ void SeedChooserScreen::MouseWheel(int theDelta)
 {
 	if (mChooseState != CHOOSE_NORMAL) return;
 
+#ifdef REVERSED_SCROLLING
+	mScrollAmount -= mBaseScrollSpeed * theDelta;
+	mScrollAmount -= mScrollAmount * mScrollAccel;
+#else
 	mScrollAmount += mBaseScrollSpeed * theDelta;
 	mScrollAmount += mScrollAmount * mScrollAccel;
+#endif
+
 }
 
 //0x485340

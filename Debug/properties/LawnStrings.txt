@@ -336,8 +336,14 @@ Newspaper Zombie
 [SCREEN_DOOR_ZOMBIE]
 Screen Door Zombie
 
+[TRASH_CAN_ZOMBIE]
+Trash Can Zombie
+
 [FOOTBALL_ZOMBIE]
 Football Zombie
+
+[GIGA_FOOTBALL_ZOMBIE]
+Giga-Football Zombie
 
 [DANCING_ZOMBIE]
 Dancing Zombie
@@ -395,6 +401,24 @@ Imp
 
 [BOSS]
 Dr. Zomboss
+
+[PEASHOOTER_ZOMBIE]
+Peashooter Zombie
+
+[WALLNUT_ZOMBIE]
+Wall-nut Zombie
+
+[JALAPENO_ZOMBIE]
+Jalapeno Zombie
+
+[GATLING_ZOMBIE]
+Gatling Pea Zombie
+
+[SQUASH_ZOMBIE]
+Squash Zombie
+
+[TALLNUT_ZOMBIE]
+Tall-nut Zombie
 
 [DOG_WALKING_ZOMBIE]
 Dog Walking Zombie
@@ -925,6 +949,15 @@ His screen door is an effective shield.
 {SHORTLINE}
 {FLAVOR}He got his screen door from the last inexpertly defended home he visited, after he ATE THE HOMEOWNER'S BRAINS.
 
+[TRASH_CAN_ZOMBIE_DESCRIPTION]
+His trash can is an effective shield.
+{EXTRASHORTLINE}
+{KEYWORD}Toughness:{STAT} medium {270}
+{KEYWORD}Trash Can Toughness:{STAT} high {1100}
+{KEYWORD}Weakness:{STAT} fume-shroom{METAL} and magnet-shroom{KEYWORD}
+{SHORTLINE}
+{FLAVOR}Sadly, this zombie isn't here to pick up any trash laying around. He just uses his trash can to protect himself, not tidy up. What a shame.
+
 [FOOTBALL_ZOMBIE_DESCRIPTION]
 Football Zombie makes the big plays.
 {SHORTLINE}
@@ -934,6 +967,15 @@ Football Zombie makes the big plays.
 {SHORTLINE}
 {FLAVOR}Football Zombie gives 110 percent whenever he's on the field. He's a team player 
 who delivers both offensively and defensively. He has no idea what a football is.
+
+[GIGA_FOOTBALL_ZOMBIE_DESCRIPTION]
+Giga-Football Zombie makes the big plays.
+{EXTRASHORTLINE}
+{KEYWORD}Toughness:{STAT} extremely high {3000}
+{KEYWORD}Speed:{STAT} fast
+{KEYWORD}Weakness:{STAT} chomper{METAL} and magnet-shroom{STAT}
+{EXTRASHORTLINE}
+{FLAVOR}He dresses in a low-key and dim fashion. He is the leading person of the field of zombie football, delivering both offensively and defensively even better. Yet he also has no idea what a football is.
 
 [DANCING_ZOMBIE_DESCRIPTION]
 Any resemblance between Dancing Zombie and persons living or dead is purely coincidental.
@@ -1097,6 +1139,61 @@ Dr. Zomboss rules them all.
 {SHORTLINE}
 {FLAVOR}Edgar George Zomboss achieved his Doctorate in Thanatology in only two years. Quickly mastering 
 thanatological technology, he built his fearsome Zombot and set about establishing absolute dominance of his local subdivision.
+
+[REDEYED_GARGANTUAR_DESCRIPTION]
+Giga-Gargantuar really is a big deal.
+{SHORTLINE}
+{KEYWORD}Toughness:{STAT} extremely high {6000}
+{SHORTLINE}
+{FLAVOR}In the zombies' headquarters, he is like an overlord, who even zombies are afraid of and make way whenever they see him.
+
+[PEASHOOTER_ZOMBIE_DESCRIPTION]
+This zombie shoots peas at your plants.
+{EXTRASHORTLINE}
+{KEYWORD}Toughness:{STAT} low {270}
+{KEYWORD}Special:{STAT} shoots peas at your plants
+{KEYWORD}Weakness:{STAT} puff-shroom and spikeweed
+{EXTRASHORTLINE}
+{FLAVOR}Dr. Zomboss has done some crazy experiments before, but plant-headed zombies was next level stuff. Finally he could give those pesky plants a taste of their own medicine!
+
+[WALLNUT_ZOMBIE_DESCRIPTION]
+His hard shell makes him very resistant to damage.
+{SHORTLINE}
+{KEYWORD}Toughness:{STAT} high {1300}
+{SHORTLINE}
+{FLAVOR}Wall-nut Zombies have been known to showcase impressive "shield" formations, often lining up side by side with other zombies to provide an extra layer of protection.
+
+[JALAPENO_ZOMBIE_DESCRIPTION]
+This zombie explodes and destroys a whole lane of plants after a while.
+{SHORTLINE}
+{KEYWORD}Toughness:{STAT} medium {340}
+{KEYWORD}Special:{STAT} can destroy a whole lane of plants
+{SHORTLINE}
+{FLAVOR}Everyone knows to be cautious in words and deeds in front of Jalapeno Zombie. This is due to his violent temper.
+
+[GATLING_ZOMBIE_DESCRIPTION]
+This zombie shoots four peas at a time.
+{SHORTLINE}
+{KEYWORD}Toughness:{STAT} low {270}
+{KEYWORD}Special:{STAT} shoots peas at your plants
+{KEYWORD}Weakness:{STAT} puff-shroom and spikeweed
+{SHORTLINE}
+{FLAVOR}The powerful firepower of Gatling Pea Zombie allows him to meet the challenge with the most handsome attitude at any time.
+
+[SQUASH_ZOMBIE_DESCRIPTION]
+This zombie will squash the first plant he meets.
+{SHORTLINE}
+{KEYWORD}Toughness:{STAT} low {270}
+{KEYWORD}Special:{STAT} squashes the first plant he meets
+{SHORTLINE}
+{FLAVOR}Squash Zombie should not be confused with the sport of squash. At least if he was playing sport, then he wouldn't be trying to eat your brains... Or would he?
+
+[TALLNUT_ZOMBIE_DESCRIPTION]
+A heavy-duty Tall-nut Zombie can take a serious beating!
+{SHORTLINE}
+{KEYWORD}Toughness:{STAT} very high {2400}
+{SHORTLINE}
+{FLAVOR}Many zombies question him about how he stands up with such a tall head. But whenever he gets this question, he always says the same thing: "Magic."
 
 [DOG_WALKING_ZOMBIE_DESCRIPTION]
 Dog Walking Zombie description
