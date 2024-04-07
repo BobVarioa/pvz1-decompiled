@@ -156,3 +156,5 @@ Other
 ### Credits 
 
 This project was made possible by a team of Chinese Modders, Keifer, Miya and Spaghetto from the PVZ1 Modders Association discord server.
+
+Almanac Pages, Trash Can Zombie, and Giga-Football Zombie by ZooWeeMinecraft
