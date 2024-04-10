@@ -6788,7 +6788,7 @@ void Zombie::StopEating()
         StartWalkAnim(20);
     }
 
-    if (mShieldType == ShieldType::SHIELDTYPE_DOOR)
+    if (mShieldType == ShieldType::SHIELDTYPE_DOOR || mShieldType == ShieldType::SHIELDTYPE_TRASHCAN)
     {
         ShowDoorArms(true);
     }
@@ -7624,7 +7624,7 @@ int Zombie::TakeShieldDamage(int theDamage, unsigned int theDamageFlags)
     if (!TestBit(theDamageFlags, (int)DamageFlags::DAMAGE_DOESNT_CAUSE_FLASH) && !TestBit(theDamageFlags, (int)DamageFlags::DAMAGE_HITS_SHIELD_AND_BODY))
     {
         mShieldRecoilCounter = 12;
-        if (mShieldType == ShieldType::SHIELDTYPE_DOOR || mShieldType == ShieldType::SHIELDTYPE_LADDER)
+        if (mShieldType == ShieldType::SHIELDTYPE_DOOR || mShieldType == ShieldType::SHIELDTYPE_TRASHCAN || mShieldType == ShieldType::SHIELDTYPE_LADDER)
         {
             mApp->PlayFoley(FoleyType::FOLEY_SHIELD_HIT);
         }
